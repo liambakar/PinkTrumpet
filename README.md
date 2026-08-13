@@ -23,6 +23,9 @@ Run the parameter tests with:
 npm test
 ```
 
+The latest reproducible comparison against the original implementation is in
+[`comparison/REPORT.md`](./comparison/REPORT.md), with matched listening samples and raw metrics.
+
 The setup command downloads `skfda.datasets.fetch_phoneme`, trains a cached discriminator, and reports held-out accuracy. The first run needs network access; later runs use `.cache/phoneme-discriminator.joblib`.
 
 ## Programmatic control

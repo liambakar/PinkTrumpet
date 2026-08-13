@@ -1,0 +1,603 @@
+{
+  "method": {
+    "sample_rate_hz": 48000,
+    "warmup_seconds": 0.45,
+    "analyzed_seconds": 0.6,
+    "case_count": 16,
+    "noise_and_modulation_disabled": true,
+    "seed": 20260813
+  },
+  "summary": {
+    "mean_similarity_score": 59.7247,
+    "median_similarity_score": 60.2198,
+    "minimum_similarity_score": 42.7522,
+    "maximum_similarity_score": 73.1866,
+    "mean_log_spectral_mae_db": 11.5714,
+    "mean_waveform_correlation": 0.7182,
+    "mean_envelope_similarity": 0.9492,
+    "mean_magnitude_cosine": 0.7752,
+    "median_absolute_gain_difference_db": 2.9532,
+    "mean_relative_formant_error_when_available": 0.8334,
+    "formant_estimate_coverage": 0.375,
+    "best_case": "seeded_06",
+    "worst_case": "seeded_05"
+  },
+  "cases": [
+    {
+      "name": "neutral",
+      "parameters": {
+        "pitchHz": 140.0,
+        "tenseness": 0.62,
+        "intensity": 1.0,
+        "loudness": 1.0,
+        "voicing": 1.0,
+        "tongueIndex": 17.5,
+        "tongueDiameter": 2.75,
+        "constrictionIndex": 32.0,
+        "constrictionDiameter": 3.5,
+        "velum": 0.01
+      },
+      "metrics": {
+        "similarity_score": 49.0299,
+        "waveform_correlation": 0.6058,
+        "alignment_lag_samples": -8,
+        "gain_difference_db": 6.052,
+        "envelope_similarity": 0.9461,
+        "original_formants_hz": [
+          860.57,
+          3357.3564,
+          null
+        ],
+        "current_formants_hz": [
+          160.5664,
+          3947.7448,
+          null
+        ],
+        "mean_relative_formant_error": 0.4946,
+        "log_spectral_mae_db": 16.2907,
+        "log_spectral_rmse_db": 20.6727,
+        "magnitude_cosine": 0.6572
+      }
+    },
+    {
+      "name": "open_a_low",
+      "parameters": {
+        "pitchHz": 105,
+        "tenseness": 0.62,
+        "intensity": 1.0,
+        "loudness": 1.0,
+        "voicing": 1.0,
+        "tongueIndex": 13,
+        "tongueDiameter": 2.55,
+        "constrictionIndex": 32.0,
+        "constrictionDiameter": 3.5,
+        "velum": 0.01
+      },
+      "metrics": {
+        "similarity_score": 60.1781,
+        "waveform_correlation": 0.7034,
+        "alignment_lag_samples": -129,
+        "gain_difference_db": 4.6924,
+        "envelope_similarity": 0.9269,
+        "original_formants_hz": [
+          null,
+          null,
+          null
+        ],
+        "current_formants_hz": [
+          null,
+          null,
+          null
+        ],
+        "mean_relative_formant_error": null,
+        "log_spectral_mae_db": 10.5212,
+        "log_spectral_rmse_db": 15.5001,
+        "magnitude_cosine": 0.76
+      }
+    },
+    {
+      "name": "open_a_high",
+      "parameters": {
+        "pitchHz": 220,
+        "tenseness": 0.62,
+        "intensity": 1.0,
+        "loudness": 1.0,
+        "voicing": 1.0,
+        "tongueIndex": 13,
+        "tongueDiameter": 2.55,
+        "constrictionIndex": 32.0,
+        "constrictionDiameter": 3.5,
+        "velum": 0.01
+      },
+      "metrics": {
+        "similarity_score": 53.702,
+        "waveform_correlation": 0.5298,
+        "alignment_lag_samples": -17,
+        "gain_difference_db": 0.3169,
+        "envelope_similarity": 0.9295,
+        "original_formants_hz": [
+          1016.3983,
+          4085.6405,
+          null
+        ],
+        "current_formants_hz": [
+          3060.4871,
+          4921.7539,
+          null
+        ],
+        "mean_relative_formant_error": 1.1079,
+        "log_spectral_mae_db": 11.1443,
+        "log_spectral_rmse_db": 16.8799,
+        "magnitude_cosine": 0.6274
+      }
+    },
+    {
+      "name": "bright_i",
+      "parameters": {
+        "pitchHz": 155,
+        "tenseness": 0.62,
+        "intensity": 1.0,
+        "loudness": 1.0,
+        "voicing": 1.0,
+        "tongueIndex": 27.4,
+        "tongueDiameter": 3.15,
+        "constrictionIndex": 40,
+        "constrictionDiameter": 2.4,
+        "velum": 0.01
+      },
+      "metrics": {
+        "similarity_score": 69.3844,
+        "waveform_correlation": 0.9004,
+        "alignment_lag_samples": -4,
+        "gain_difference_db": 2.0519,
+        "envelope_similarity": 0.9563,
+        "original_formants_hz": [
+          185.4168,
+          3118.2344,
+          null
+        ],
+        "current_formants_hz": [
+          669.6092,
+          4449.2078,
+          null
+        ],
+        "mean_relative_formant_error": 1.5191,
+        "log_spectral_mae_db": 9.5525,
+        "log_spectral_rmse_db": 11.5161,
+        "magnitude_cosine": 0.965
+      }
+    },
+    {
+      "name": "rounded_u",
+      "parameters": {
+        "pitchHz": 125,
+        "tenseness": 0.62,
+        "intensity": 1.0,
+        "loudness": 1.0,
+        "voicing": 1.0,
+        "tongueIndex": 23,
+        "tongueDiameter": 3.3,
+        "constrictionIndex": 41,
+        "constrictionDiameter": 0.9,
+        "velum": 0.01
+      },
+      "metrics": {
+        "similarity_score": 66.1858,
+        "waveform_correlation": 0.8205,
+        "alignment_lag_samples": -52,
+        "gain_difference_db": 2.8174,
+        "envelope_similarity": 0.9589,
+        "original_formants_hz": [
+          null,
+          null,
+          null
+        ],
+        "current_formants_hz": [
+          null,
+          null,
+          null
+        ],
+        "mean_relative_formant_error": null,
+        "log_spectral_mae_db": 9.9386,
+        "log_spectral_rmse_db": 11.8786,
+        "magnitude_cosine": 0.9034
+      }
+    },
+    {
+      "name": "mid_e",
+      "parameters": {
+        "pitchHz": 175,
+        "tenseness": 0.62,
+        "intensity": 1.0,
+        "loudness": 1.0,
+        "voicing": 1.0,
+        "tongueIndex": 20,
+        "tongueDiameter": 3.15,
+        "constrictionIndex": 32.0,
+        "constrictionDiameter": 3.5,
+        "velum": 0.01
+      },
+      "metrics": {
+        "similarity_score": 46.7795,
+        "waveform_correlation": 0.5766,
+        "alignment_lag_samples": -98,
+        "gain_difference_db": 2.0971,
+        "envelope_similarity": 0.906,
+        "original_formants_hz": [
+          799.1551,
+          3203.4668,
+          null
+        ],
+        "current_formants_hz": [
+          null,
+          null,
+          null
+        ],
+        "mean_relative_formant_error": null,
+        "log_spectral_mae_db": 17.0233,
+        "log_spectral_rmse_db": 20.3937,
+        "magnitude_cosine": 0.6371
+      }
+    },
+    {
+      "name": "low_back",
+      "parameters": {
+        "pitchHz": 115,
+        "tenseness": 0.62,
+        "intensity": 1.0,
+        "loudness": 1.0,
+        "voicing": 1.0,
+        "tongueIndex": 12.3,
+        "tongueDiameter": 2.15,
+        "constrictionIndex": 32.0,
+        "constrictionDiameter": 3.5,
+        "velum": 0.01
+      },
+      "metrics": {
+        "similarity_score": 60.2615,
+        "waveform_correlation": 0.6883,
+        "alignment_lag_samples": -92,
+        "gain_difference_db": 2.3197,
+        "envelope_similarity": 0.959,
+        "original_formants_hz": [
+          801.7692,
+          4470.305,
+          null
+        ],
+        "current_formants_hz": [
+          null,
+          null,
+          null
+        ],
+        "mean_relative_formant_error": null,
+        "log_spectral_mae_db": 10.7177,
+        "log_spectral_rmse_db": 13.0271,
+        "magnitude_cosine": 0.7762
+      }
+    },
+    {
+      "name": "nasal_m",
+      "parameters": {
+        "pitchHz": 135,
+        "tenseness": 0.62,
+        "intensity": 1.0,
+        "loudness": 1.0,
+        "voicing": 1.0,
+        "tongueIndex": 17,
+        "tongueDiameter": 2.7,
+        "constrictionIndex": 41,
+        "constrictionDiameter": 0.05,
+        "velum": 0.4
+      },
+      "metrics": {
+        "similarity_score": 55.8601,
+        "waveform_correlation": 0.5881,
+        "alignment_lag_samples": -71,
+        "gain_difference_db": 5.0254,
+        "envelope_similarity": 0.9384,
+        "original_formants_hz": [
+          null,
+          null,
+          null
+        ],
+        "current_formants_hz": [
+          558.1337,
+          3137.5455,
+          null
+        ],
+        "mean_relative_formant_error": null,
+        "log_spectral_mae_db": 10.5432,
+        "log_spectral_rmse_db": 13.5103,
+        "magnitude_cosine": 0.6168
+      }
+    },
+    {
+      "name": "seeded_01",
+      "parameters": {
+        "pitchHz": 234.3028,
+        "tenseness": 0.5947,
+        "intensity": 1.0,
+        "loudness": 1.0,
+        "voicing": 1.0,
+        "tongueIndex": 15.4694,
+        "tongueDiameter": 3.1099,
+        "constrictionIndex": 40.3592,
+        "constrictionDiameter": 0.8201,
+        "velum": 0.01
+      },
+      "metrics": {
+        "similarity_score": 57.5892,
+        "waveform_correlation": 0.6555,
+        "alignment_lag_samples": 90,
+        "gain_difference_db": -5.2661,
+        "envelope_similarity": 0.9566,
+        "original_formants_hz": [
+          null,
+          null,
+          null
+        ],
+        "current_formants_hz": [
+          null,
+          null,
+          null
+        ],
+        "mean_relative_formant_error": null,
+        "log_spectral_mae_db": 10.9071,
+        "log_spectral_rmse_db": 14.5261,
+        "magnitude_cosine": 0.6655
+      }
+    },
+    {
+      "name": "seeded_02",
+      "parameters": {
+        "pitchHz": 171.4594,
+        "tenseness": 0.7248,
+        "intensity": 1.0,
+        "loudness": 1.0,
+        "voicing": 1.0,
+        "tongueIndex": 20.9015,
+        "tongueDiameter": 2.0777,
+        "constrictionIndex": 34.2323,
+        "constrictionDiameter": 3.0413,
+        "velum": 0.01
+      },
+      "metrics": {
+        "similarity_score": 69.4892,
+        "waveform_correlation": 0.8749,
+        "alignment_lag_samples": 18,
+        "gain_difference_db": 3.0889,
+        "envelope_similarity": 0.941,
+        "original_formants_hz": [
+          502.8408,
+          4188.9083,
+          null
+        ],
+        "current_formants_hz": [
+          null,
+          null,
+          null
+        ],
+        "mean_relative_formant_error": null,
+        "log_spectral_mae_db": 8.9827,
+        "log_spectral_rmse_db": 10.9625,
+        "magnitude_cosine": 0.9482
+      }
+    },
+    {
+      "name": "seeded_03",
+      "parameters": {
+        "pitchHz": 155.203,
+        "tenseness": 0.5164,
+        "intensity": 1.0,
+        "loudness": 1.0,
+        "voicing": 1.0,
+        "tongueIndex": 19.3005,
+        "tongueDiameter": 2.0783,
+        "constrictionIndex": 29.4942,
+        "constrictionDiameter": 3.3088,
+        "velum": 0.01
+      },
+      "metrics": {
+        "similarity_score": 70.7904,
+        "waveform_correlation": 0.9704,
+        "alignment_lag_samples": 5,
+        "gain_difference_db": 2.7156,
+        "envelope_similarity": 0.9889,
+        "original_formants_hz": [
+          487.0864,
+          3867.1664,
+          null
+        ],
+        "current_formants_hz": [
+          124.7683,
+          3341.6337,
+          null
+        ],
+        "mean_relative_formant_error": 0.4399,
+        "log_spectral_mae_db": 9.9094,
+        "log_spectral_rmse_db": 12.2991,
+        "magnitude_cosine": 0.977
+      }
+    },
+    {
+      "name": "seeded_04",
+      "parameters": {
+        "pitchHz": 179.3388,
+        "tenseness": 0.6665,
+        "intensity": 1.0,
+        "loudness": 1.0,
+        "voicing": 1.0,
+        "tongueIndex": 26.8826,
+        "tongueDiameter": 3.4805,
+        "constrictionIndex": 36.4961,
+        "constrictionDiameter": 2.5591,
+        "velum": 0.01
+      },
+      "metrics": {
+        "similarity_score": 64.0821,
+        "waveform_correlation": 0.949,
+        "alignment_lag_samples": 48,
+        "gain_difference_db": 3.1461,
+        "envelope_similarity": 0.9844,
+        "original_formants_hz": [
+          null,
+          null,
+          null
+        ],
+        "current_formants_hz": [
+          669.097,
+          4398.7759,
+          null
+        ],
+        "mean_relative_formant_error": null,
+        "log_spectral_mae_db": 13.8569,
+        "log_spectral_rmse_db": 17.1848,
+        "magnitude_cosine": 0.972
+      }
+    },
+    {
+      "name": "seeded_05",
+      "parameters": {
+        "pitchHz": 232.9771,
+        "tenseness": 0.8232,
+        "intensity": 1.0,
+        "loudness": 1.0,
+        "voicing": 1.0,
+        "tongueIndex": 16.3431,
+        "tongueDiameter": 3.2641,
+        "constrictionIndex": 37.1084,
+        "constrictionDiameter": 2.433,
+        "velum": 0.01
+      },
+      "metrics": {
+        "similarity_score": 42.7522,
+        "waveform_correlation": 0.2729,
+        "alignment_lag_samples": -111,
+        "gain_difference_db": -21.4564,
+        "envelope_similarity": 0.9825,
+        "original_formants_hz": [
+          1163.5895,
+          3307.4329,
+          null
+        ],
+        "current_formants_hz": [
+          3339.134,
+          4795.8959,
+          null
+        ],
+        "mean_relative_formant_error": 1.1599,
+        "log_spectral_mae_db": 12.7022,
+        "log_spectral_rmse_db": 14.8961,
+        "magnitude_cosine": 0.3472
+      }
+    },
+    {
+      "name": "seeded_06",
+      "parameters": {
+        "pitchHz": 200.8802,
+        "tenseness": 0.7284,
+        "intensity": 1.0,
+        "loudness": 1.0,
+        "voicing": 1.0,
+        "tongueIndex": 25.9258,
+        "tongueDiameter": 3.303,
+        "constrictionIndex": 39.6776,
+        "constrictionDiameter": 2.7972,
+        "velum": 0.01
+      },
+      "metrics": {
+        "similarity_score": 73.1866,
+        "waveform_correlation": 0.905,
+        "alignment_lag_samples": 79,
+        "gain_difference_db": -0.2968,
+        "envelope_similarity": 0.9604,
+        "original_formants_hz": [
+          577.0903,
+          3162.3303,
+          null
+        ],
+        "current_formants_hz": [
+          626.0503,
+          4659.1966,
+          null
+        ],
+        "mean_relative_formant_error": 0.2791,
+        "log_spectral_mae_db": 7.5891,
+        "log_spectral_rmse_db": 9.0631,
+        "magnitude_cosine": 0.9411
+      }
+    },
+    {
+      "name": "seeded_07",
+      "parameters": {
+        "pitchHz": 220.5252,
+        "tenseness": 0.6965,
+        "intensity": 1.0,
+        "loudness": 1.0,
+        "voicing": 1.0,
+        "tongueIndex": 25.2967,
+        "tongueDiameter": 2.5856,
+        "constrictionIndex": 40.4047,
+        "constrictionDiameter": 3.3415,
+        "velum": 0.01
+      },
+      "metrics": {
+        "similarity_score": 65.2097,
+        "waveform_correlation": 0.829,
+        "alignment_lag_samples": 88,
+        "gain_difference_db": -1.5714,
+        "envelope_similarity": 0.9662,
+        "original_formants_hz": [
+          427.0672,
+          3444.6592,
+          null
+        ],
+        "current_formants_hz": [
+          null,
+          null,
+          null
+        ],
+        "mean_relative_formant_error": null,
+        "log_spectral_mae_db": 10.227,
+        "log_spectral_rmse_db": 11.7314,
+        "magnitude_cosine": 0.8543
+      }
+    },
+    {
+      "name": "seeded_08",
+      "parameters": {
+        "pitchHz": 101.7164,
+        "tenseness": 0.6933,
+        "intensity": 1.0,
+        "loudness": 1.0,
+        "voicing": 1.0,
+        "tongueIndex": 20.0107,
+        "tongueDiameter": 3.0705,
+        "constrictionIndex": 41.9813,
+        "constrictionDiameter": 1.7801,
+        "velum": 0.01
+      },
+      "metrics": {
+        "similarity_score": 51.114,
+        "waveform_correlation": 0.6218,
+        "alignment_lag_samples": -131,
+        "gain_difference_db": 3.692,
+        "envelope_similarity": 0.8871,
+        "original_formants_hz": [
+          766.6639,
+          3253.497,
+          null
+        ],
+        "current_formants_hz": [
+          null,
+          null,
+          null
+        ],
+        "mean_relative_formant_error": null,
+        "log_spectral_mae_db": 15.2369,
+        "log_spectral_rmse_db": 18.4475,
+        "magnitude_cosine": 0.7551
+      }
+    }
+  ]
+}
