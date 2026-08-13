@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#17141b" />
+    <meta
+      name="description"
+      content="A parameter-first, model-ready vocal tract synthesizer inspired by Pink Trombone."
+    />
+    <title>Pink Trumpet — Parametric Voice Lab</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Pink Trumpet home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>Pink Trumpet</span>
+        </a>
+        <div class="topbar-actions">
+          <span class="status" id="status" data-state="idle">
+            <span class="status-dot"></span>
+            <span id="statusText">Engine idle</span>
+          </span>
+          <button class="primary-button" id="audioButton" type="button">
+            <span class="play-icon" aria-hidden="true"></span>
+            Start voice
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div>
+            <p class="eyebrow">Parametric voice lab</p>
+            <h1>Shape a voice.<br /><em>One parameter at a time.</em></h1>
+          </div>
+          <p class="hero-copy">
+            A modern, model-ready vocal-tract synthesizer. Move the tongue, narrow the airway,
+            open the velum—or drive every control from code.
+          </p>
+        </section>
+
+        <section class="workspace" aria-label="Voice synthesizer">
+          <div class="stage-card">
+            <div class="stage-header">
+              <div>
+                <p class="section-kicker">Vocal tract</p>
+                <h2 id="presetTitle">Open /ɑ/</h2>
+              </div>
+              <div class="meter" aria-label="Output level">
+                <span>Output</span>
+                <div class="meter-track"><div class="meter-fill" id="meterFill"></div></div>
+              </div>
+            </div>
+
+            <div class="tract-wrap">
+              <canvas id="tractCanvas" aria-label="Interactive vocal tract visualization"></canvas>
+              <p class="tract-hint"><span></span> Drag the tongue or airway</p>
+            </div>
+
+            <div class="pitch-strip">
+              <label for="pitch">
+                <span>Pitch</span>
+                <output id="pitchValue">140 Hz</output>
+              </label>
+              <input id="pitch" type="range" min="70" max="420" step="1" value="140" />
+              <div class="pitch-scale" aria-hidden="true"><span>Low</span><span>High</span></div>
+            </div>
+
+            <div class="preset-row" aria-label="Voice presets">
+              <button type="button" class="preset active" data-preset="openA">Open /ɑ/</button>
+              <button type="button" class="preset" data-preset="brightE">Bright /i/</button>
+              <button type="button" class="preset" data-preset="roundedU">Rounded /u/</button>
+              <button type="button" class="preset" data-preset="nasalM">Nasal /m/</button>
+              <button type="button" class="preset" data-preset="fricativeS">Fricative /s/</button>
+            </div>
+          </div>
+
+          <aside class="controls-card">
+            <div class="controls-heading">
+              <div>
+                <p class="section-kicker">Parameters</p>
+                <h2>Voice controls</h2>
+              </div>
+              <button class="icon-button" id="resetButton" type="button" title="Reset parameters" aria-label="Reset parameters">↺</button>
+            </div>
+
+            <div class="control-groups" id="controlGroups"></div>
+
+            <div class="json-panel">
+              <button type="button" class="json-heading" id="jsonToggle" aria-expanded="false">
+                <span><span class="code-icon">{ }</span> Live parameter vector</span>
+                <span class="chevron">⌄</span>
+              </button>
+              <div class="json-content" id="jsonContent" hidden>
+                <pre id="parameterJson"></pre>
+                <button type="button" id="copyButton">Copy JSON</button>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section class="model-card">
+          <div>
+            <p class="section-kicker">Adversarial search</p>
+            <h2>Optimize toward a phoneme</h2>
+            <p>
+              Each iteration captures 32 ms of synthesized audio and compares its log-periodogram
+              with 4,509 labeled speech frames from the scikit-fda phoneme dataset.
+            </p>
+          </div>
+          <div class="loop-actions">
+            <label class="phoneme-select" for="phonemeSelect">
+              <span>Target phoneme</span>
+              <select id="phonemeSelect">
+                <option value="aa">aa · dark</option>
+                <option value="ao">ao · water</option>
+                <option value="iy">iy · she</option>
+                <option value="sh">sh · she</option>
+                <option value="dcl">dcl · dark closure</option>
+              </select>
+            </label>
+            <label class="threshold-control" for="rewardThreshold">
+              <span>Stop at reward</span>
+              <span class="threshold-input"><input id="rewardThreshold" type="number" min="1" max="100" step="1" value="90" /><b>%</b></span>
+            </label>
+            <span class="loop-state" id="searchState"><span></span> Search stopped</span>
+            <button class="secondary-button" id="searchButton" type="button">Start phoneme search</button>
+            <button class="text-button" id="loopButton" type="button">Run unscored demo</button>
+          </div>
+          <div class="score-panel" id="scorePanel">
+            <div class="score-heading"><span>Best reward</span><strong id="bestScore">—</strong></div>
+            <div class="score-row"><span>Discriminator</span><output id="discriminatorScore">—</output></div>
+            <div class="score-track"><span id="discriminatorBar"></span></div>
+            <div class="score-row"><span>Centroid similarity</span><output id="centroidScore">—</output></div>
+            <div class="score-track"><span id="centroidBar"></span></div>
+            <p id="scoreNote">Start a search to evaluate synthesized frames.</p>
+            <div class="recording-actions">
+              <button type="button" id="renderWavButton">Render current WAV</button>
+              <a id="downloadWav" hidden>Download WAV</a>
+            </div>
+            <audio id="candidateAudio" controls hidden></audio>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <span>Pink Trumpet · a developer-friendly Pink Trombone recreation</span>
+        <a href="https://dood.al/pinktrombone/" target="_blank" rel="noreferrer">Original by Neil Thapen ↗</a>
+      </footer>
+    </div>
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>
