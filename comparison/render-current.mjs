@@ -15,6 +15,7 @@ globalThis.registerProcessor = (_name, processorClass) => { Processor = processo
 await import("../src/pink-trombone-worklet.js?comparison");
 
 const processor = new Processor();
+processor.glottis.noise.sample = () => 0;
 Object.assign(processor.parameters, parameters, {
   aspiration: 0,
   fricativeIntensity: 0,
