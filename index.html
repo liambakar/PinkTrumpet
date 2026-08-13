@@ -96,8 +96,8 @@
             <p class="section-kicker">Adversarial search</p>
             <h2>Optimize toward a phoneme</h2>
             <p>
-              Each iteration captures 32 ms of synthesized audio and compares its log-periodogram
-              with 4,509 labeled speech frames from the scikit-fda phoneme dataset.
+              CMA-ES evolves a population of voices from 32 ms captures and repeats the strongest
+              candidates before comparing them with 4,509 labeled scikit-fda speech spectra.
             </p>
           </div>
           <div class="loop-actions">
@@ -114,6 +114,14 @@
             <label class="threshold-control" for="rewardThreshold">
               <span>Stop at reward</span>
               <span class="threshold-input"><input id="rewardThreshold" type="number" min="1" max="100" step="1" value="90" /><b>%</b></span>
+            </label>
+            <label class="threshold-control" for="maxIterations">
+              <span>Maximum evaluations</span>
+              <span class="threshold-input"><input id="maxIterations" type="number" min="10" max="10000" step="10" value="240" /></span>
+            </label>
+            <label class="threshold-control" for="repeatCaptures">
+              <span>Top-candidate captures</span>
+              <span class="threshold-input"><input id="repeatCaptures" type="number" min="1" max="10" step="1" value="3" /></span>
             </label>
             <span class="loop-state" id="searchState"><span></span> Search stopped</span>
             <button class="secondary-button" id="searchButton" type="button">Start phoneme search</button>

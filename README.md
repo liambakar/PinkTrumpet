@@ -114,7 +114,9 @@ The included dataset has five targets: `aa`, `ao`, `dcl`, `iy`, and `sh`. It con
 ```js
 const search = pinkTrumpet.createPhonemeSearch({
   phoneme: "aa",
-  rewardThreshold: 0.9, // automatically stop at 90%; use null to run indefinitely
+  rewardThreshold: 0.9, // stop successfully at 90%; null disables threshold success
+  maxIterations: 240, // hard cap on real audio evaluations
+  capturesPerPromisingCandidate: 3, // average the strongest candidates
 });
 
 search.addEventListener("score", ({ detail }) => {
@@ -122,14 +124,17 @@ search.addEventListener("score", ({ detail }) => {
 });
 
 search.addEventListener("complete", ({ detail }) => {
-  console.log("threshold reached", detail.best.score, detail.best.parameters);
+  console.log(detail.outcome); // "threshold-success" or "best-available"
+  console.log(detail.best.score, detail.best.parameters);
 });
 
 await search.start();
 // later: search.stop(); // manual stop also restores the highest-scoring parameters
 ```
 
-The initial scorer combines a five-way MLP discriminator probability (70%) with cosine similarity to the target phoneme's mean normalized spectrum (30%). The search begins from random safe parameters, mutates the best state, periodically restarts to preserve exploration, and never overlaps scoring calls. The interface defaults to a 90% stopping threshold, which can be changed before each run.
+The scorer combines a five-way MLP discriminator probability (70%) with cosine similarity to the target phoneme's mean normalized spectrum (30%). The search begins with a random safe mean and uses CMA-ES to score a population, learn productive parameter directions and correlations, and generate the next population. Each generation captures every candidate once, then captures its three strongest candidates two more times and uses their average rewards. Calls never overlap.
+
+Searches stop either when the reward threshold is reached or when the maximum evaluation budget is exhausted. Both outcomes restore the best measured parameters. The completion report distinguishes `threshold-success` from `best-available` and includes the evaluation count, completed generations, population size, and best candidate.
 
 This is an adversarial-reward baseline, not a differentiable GAN: Web Audio parameters cannot receive gradients from the Python discriminator. A future raw-waveform dataset can add WavLM and multi-resolution STFT rewards without changing the controller or capture API.
 
@@ -140,6 +145,7 @@ For training, use `PARAMETER_NAMES` as the output-head order and either normaliz
 - `src/pink-trombone-worklet.js` — real-time glottal source and vocal-tract waveguide
 - `src/voice-controller.js` — audio lifecycle, parameter API, feedback metrics, and sequential policy loop
 - `src/phoneme-search.js` — captured-frame scoring and black-box parameter optimization
+- `src/cma-es.js` — bounded population sampling and covariance adaptation
 - `src/parameters.js` — the single parameter schema, presets, clamps, and vector conversion
 - `src/tract-visualizer.js` — responsive canvas display and pointer-to-parameter mapping
 - `src/app.js` — UI wiring only; model code does not need it

@@ -208,7 +208,7 @@ function renderScore({ current, best }) {
   $("#centroidScore").value = percentage(current.centroidSimilarity);
   $("#discriminatorBar").style.width = percentage(current.discriminatorProbability);
   $("#centroidBar").style.width = percentage(current.centroidSimilarity);
-  $("#scoreNote").textContent = `Iteration ${current.iteration + 1} · predicted ${current.predictedPhoneme} · target ${current.phoneme}`;
+  $("#scoreNote").textContent = `Evaluation ${current.evaluation} · generation ${current.generation} · candidate ${current.candidate}/${current.populationSize} · ${current.captures} capture${current.captures === 1 ? "" : "s"} · predicted ${current.predictedPhoneme}`;
 }
 
 searchButton.addEventListener("click", async () => {
@@ -222,9 +222,17 @@ searchButton.addEventListener("click", async () => {
   const thresholdPercent = Math.min(100, Math.max(1, Number(thresholdInput.value) || 90));
   thresholdInput.value = String(thresholdPercent);
   const rewardThreshold = thresholdPercent / 100;
+  const maxIterationsInput = $("#maxIterations");
+  const maxIterations = Math.min(10_000, Math.max(10, Math.round(Number(maxIterationsInput.value) || 240)));
+  maxIterationsInput.value = String(maxIterations);
+  const repeatCapturesInput = $("#repeatCaptures");
+  const capturesPerPromisingCandidate = Math.min(10, Math.max(1, Math.round(Number(repeatCapturesInput.value) || 3)));
+  repeatCapturesInput.value = String(capturesPerPromisingCandidate);
   phonemeSearch = voice.createPhonemeSearch({
     phoneme: $("#phonemeSelect").value,
     rewardThreshold,
+    maxIterations,
+    capturesPerPromisingCandidate,
   });
   phonemeSearch.addEventListener("score", ({ detail }) => renderScore(detail));
   phonemeSearch.addEventListener("status", ({ detail }) => {
@@ -234,11 +242,19 @@ searchButton.addEventListener("click", async () => {
     searchState.classList.remove("complete");
     searchState.lastChild.textContent = detail.running ? ` Searching for /${detail.phoneme}/` : " Search stopped";
     thresholdInput.disabled = detail.running;
+    maxIterationsInput.disabled = detail.running;
+    repeatCapturesInput.disabled = detail.running;
   });
   phonemeSearch.addEventListener("complete", ({ detail }) => {
     searchState.classList.add("complete");
-    searchState.lastChild.textContent = ` Target reached at ${percentage(detail.best.score)}`;
-    $("#scoreNote").textContent = `Stopped automatically: best reward met the ${percentage(detail.threshold)} threshold.`;
+    if (detail.thresholdReached) {
+      searchState.lastChild.textContent = ` Threshold reached at ${percentage(detail.best.score)}`;
+      const generationLabel = detail.completedGenerations === 1 ? "generation" : "generations";
+      $("#scoreNote").textContent = `Success after ${detail.evaluations} evaluations and ${detail.completedGenerations} completed ${generationLabel}: best reward met the ${percentage(detail.threshold)} threshold.`;
+    } else {
+      searchState.lastChild.textContent = ` Best available ${percentage(detail.best.score)}`;
+      $("#scoreNote").textContent = `Evaluation limit reached after ${detail.evaluations} captures. The ${percentage(detail.threshold)} target was not reached; the best available parameters were restored.`;
+    }
   });
   phonemeSearch.addEventListener("error", ({ detail }) => {
     $("#scoreNote").textContent = detail.message;
