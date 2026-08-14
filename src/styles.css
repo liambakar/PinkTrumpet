@@ -270,7 +270,8 @@ input[type="range"]::-moz-range-thumb { width: 10px; height: 10px; background: #
 .code-sample b { color: var(--blush); font-weight: 500; }
 
 footer { min-height: 96px; display: flex; align-items: center; justify-content: space-between; color: #6f686f; font-size: 10px; }
-footer a { color: #8d858d; text-decoration: none; }
+footer cite { font-style: normal; }
+footer a { color: #8d858d; text-decoration: underline; text-underline-offset: 2px; }
 
 @media (max-width: 980px) {
   .workspace { grid-template-columns: 1fr; }

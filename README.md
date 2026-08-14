@@ -155,3 +155,5 @@ For training, use `PARAMETER_NAMES` as the output-head order and either normaliz
 ## Attribution
 
 The synthesis method and portions of the DSP are derived from **Pink Trombone v1.1** by Neil Thapen, used under the MIT License. This project retains the license and attribution in [`LICENSE`](./LICENSE).
+
+> Thapen, Neil. *[Pink Trombone](https://dood.al/pinktrombone/)*, v1.1, 2017.
