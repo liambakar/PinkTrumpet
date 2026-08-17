@@ -8,6 +8,12 @@ import numpy as np
 
 from research_representation import engine
 from research_representation.analyze_v2 import analyze, direction_metrics
+from research_representation.analyze_v3 import (
+    cross_validated_state_predictors,
+    local_linear_field,
+    smoothness_metrics,
+    unit_rows,
+)
 from research_representation.experiment import (
     INTERVENTIONS,
     PARAMETER_NAMES,
@@ -109,6 +115,45 @@ class ExperimentTwoTests(unittest.TestCase):
         self.assertAlmostEqual(result["transformation_classifier"]["balanced_accuracy"], 1.0)
         for metrics in result["magnitude_regression"].values():
             self.assertGreater(metrics["r2"], 0.9)
+
+
+class ExperimentThreeTests(unittest.TestCase):
+    def test_smoothness_detects_a_state_aligned_field(self):
+        rng = np.random.default_rng(31)
+        starting = rng.normal(size=(24, 8))
+        displacement = unit_rows(starting)
+        metrics = smoothness_metrics(
+            starting,
+            displacement,
+            seed=5,
+            permutation_draws=200,
+        )
+        self.assertGreater(metrics["spearman_rho"], 0.99)
+        self.assertGreater(
+            metrics["nearest_state_mean_direction_cosine"],
+            metrics["all_pair_mean_direction_cosine"],
+        )
+
+    def test_state_predictor_beats_a_fixed_vector_on_linear_data(self):
+        rng = np.random.default_rng(37)
+        starting = rng.normal(size=(30, 8))
+        transform = rng.normal(size=(8, 12))
+        targets = unit_rows(starting) @ transform
+        result = cross_validated_state_predictors(
+            starting,
+            targets,
+            seed=7,
+            permutation_draws=200,
+        )
+        self.assertGreater(result["linear_state"]["mean_direction_cosine"], 0.95)
+        self.assertGreater(result["linear_state"]["mse_improvement_over_fixed_vector"], 0.8)
+
+    def test_local_linear_field_recovers_signed_slopes(self):
+        rng = np.random.default_rng(41)
+        field = rng.normal(size=(10, 6))
+        deltas = np.asarray([-0.5, -0.2, 0.2, 0.5])
+        displacements = deltas[None, :, None] * field[:, None, :]
+        np.testing.assert_allclose(local_linear_field(displacements, deltas), field)
 
 
 if __name__ == "__main__":

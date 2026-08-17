@@ -1,0 +1,643 @@
+{
+  "experiment": "state-dependent-displacement-fields-v3",
+  "sample_count": 50,
+  "embedding_dimension": 768,
+  "pair_count": 1225,
+  "smoothness": {
+    "constrictionDiameter": {
+      "pair_count": 1225,
+      "starting_cosine_min": 0.7267424782617737,
+      "starting_cosine_median": 0.9339465703663924,
+      "starting_cosine_max": 0.9972543427644088,
+      "spearman_rho": 0.20776821658516587,
+      "spearman_jackknife_95ci": [
+        0.09691581651873411,
+        0.31862061665159763
+      ],
+      "mantel_permutation_pvalue": 9.999000099990002e-05,
+      "nearest_state_mean_direction_cosine": 0.4305069560671281,
+      "nearest_state_median_direction_cosine": 0.4930390713789181,
+      "all_pair_mean_direction_cosine": 0.08143432142397047,
+      "binned_curve": [
+        {
+          "mean_starting_similarity": 0.8252589993337176,
+          "mean_direction_similarity": 0.04143668308324563,
+          "direction_similarity_sem": 0.019938909097242337,
+          "pair_count": 123
+        },
+        {
+          "mean_starting_similarity": 0.8733329597137038,
+          "mean_direction_similarity": 0.02152609668640929,
+          "direction_similarity_sem": 0.01904653461412253,
+          "pair_count": 123
+        },
+        {
+          "mean_starting_similarity": 0.8975094928762001,
+          "mean_direction_similarity": 0.031107615354951844,
+          "direction_similarity_sem": 0.02037232067332052,
+          "pair_count": 123
+        },
+        {
+          "mean_starting_similarity": 0.9148233268436212,
+          "mean_direction_similarity": 0.04284537068796142,
+          "direction_similarity_sem": 0.022488917140161754,
+          "pair_count": 123
+        },
+        {
+          "mean_starting_similarity": 0.9280241724704056,
+          "mean_direction_similarity": -0.008308171168899781,
+          "direction_similarity_sem": 0.02405250959482039,
+          "pair_count": 123
+        },
+        {
+          "mean_starting_similarity": 0.9388537810102147,
+          "mean_direction_similarity": 0.058101201356144556,
+          "direction_similarity_sem": 0.024862166215440497,
+          "pair_count": 122
+        },
+        {
+          "mean_starting_similarity": 0.9483363142006912,
+          "mean_direction_similarity": 0.08611686848343247,
+          "direction_similarity_sem": 0.026106145371046167,
+          "pair_count": 122
+        },
+        {
+          "mean_starting_similarity": 0.9578123317415973,
+          "mean_direction_similarity": 0.1342615710554464,
+          "direction_similarity_sem": 0.02941151800530824,
+          "pair_count": 122
+        },
+        {
+          "mean_starting_similarity": 0.9690767357865128,
+          "mean_direction_similarity": 0.14470273305220974,
+          "direction_similarity_sem": 0.030775686703026113,
+          "pair_count": 122
+        },
+        {
+          "mean_starting_similarity": 0.9827615638178248,
+          "mean_direction_similarity": 0.26483655722647675,
+          "direction_similarity_sem": 0.03153557650208185,
+          "pair_count": 122
+        }
+      ]
+    },
+    "constrictionIndex": {
+      "pair_count": 1225,
+      "starting_cosine_min": 0.7267424782617737,
+      "starting_cosine_median": 0.9339465703663924,
+      "starting_cosine_max": 0.9972543427644088,
+      "spearman_rho": 0.2150943966493612,
+      "spearman_jackknife_95ci": [
+        0.08602257471149286,
+        0.3441662185872295
+      ],
+      "mantel_permutation_pvalue": 9.999000099990002e-05,
+      "nearest_state_mean_direction_cosine": 0.4250219516088275,
+      "nearest_state_median_direction_cosine": 0.5292397619835094,
+      "all_pair_mean_direction_cosine": 0.003078494681712967,
+      "binned_curve": [
+        {
+          "mean_starting_similarity": 0.8252589993337176,
+          "mean_direction_similarity": -0.07481506134681089,
+          "direction_similarity_sem": 0.019776940108177526,
+          "pair_count": 123
+        },
+        {
+          "mean_starting_similarity": 0.8733329597137038,
+          "mean_direction_similarity": -0.04594059411830945,
+          "direction_similarity_sem": 0.021963183871483074,
+          "pair_count": 123
+        },
+        {
+          "mean_starting_similarity": 0.8975094928762001,
+          "mean_direction_similarity": -0.03737515184381363,
+          "direction_similarity_sem": 0.0247270406243767,
+          "pair_count": 123
+        },
+        {
+          "mean_starting_similarity": 0.9148233268436212,
+          "mean_direction_similarity": -0.0903840055148892,
+          "direction_similarity_sem": 0.0238390557231965,
+          "pair_count": 123
+        },
+        {
+          "mean_starting_similarity": 0.9280241724704056,
+          "mean_direction_similarity": -0.062329487081116235,
+          "direction_similarity_sem": 0.02925105148141452,
+          "pair_count": 123
+        },
+        {
+          "mean_starting_similarity": 0.9388537810102147,
+          "mean_direction_similarity": -0.06561781815004274,
+          "direction_similarity_sem": 0.031745934048341376,
+          "pair_count": 122
+        },
+        {
+          "mean_starting_similarity": 0.9483363142006912,
+          "mean_direction_similarity": 0.03236930169794322,
+          "direction_similarity_sem": 0.032640804698578614,
+          "pair_count": 122
+        },
+        {
+          "mean_starting_similarity": 0.9578123317415973,
+          "mean_direction_similarity": 0.062134619179407144,
+          "direction_similarity_sem": 0.03368449492232651,
+          "pair_count": 122
+        },
+        {
+          "mean_starting_similarity": 0.9690767357865128,
+          "mean_direction_similarity": 0.09573310397216747,
+          "direction_similarity_sem": 0.0355509014129958,
+          "pair_count": 122
+        },
+        {
+          "mean_starting_similarity": 0.9827615638178248,
+          "mean_direction_similarity": 0.2196841119349997,
+          "direction_similarity_sem": 0.037853434932338226,
+          "pair_count": 122
+        }
+      ]
+    },
+    "pitchHz": {
+      "pair_count": 1225,
+      "starting_cosine_min": 0.7267424782617737,
+      "starting_cosine_median": 0.9339465703663924,
+      "starting_cosine_max": 0.9972543427644088,
+      "spearman_rho": 0.20007221159263047,
+      "spearman_jackknife_95ci": [
+        0.09089840481407556,
+        0.30924601837118537
+      ],
+      "mantel_permutation_pvalue": 0.00029997000299970003,
+      "nearest_state_mean_direction_cosine": 0.37384199449264266,
+      "nearest_state_median_direction_cosine": 0.36415668205277396,
+      "all_pair_mean_direction_cosine": 0.08847519778545326,
+      "binned_curve": [
+        {
+          "mean_starting_similarity": 0.8252589993337176,
+          "mean_direction_similarity": 0.016422568401564152,
+          "direction_similarity_sem": 0.021787094148800253,
+          "pair_count": 123
+        },
+        {
+          "mean_starting_similarity": 0.8733329597137038,
+          "mean_direction_similarity": 0.031390858672797256,
+          "direction_similarity_sem": 0.02391705514880639,
+          "pair_count": 123
+        },
+        {
+          "mean_starting_similarity": 0.8975094928762001,
+          "mean_direction_similarity": 0.03696637400619477,
+          "direction_similarity_sem": 0.025140750780686352,
+          "pair_count": 123
+        },
+        {
+          "mean_starting_similarity": 0.9148233268436212,
+          "mean_direction_similarity": 0.06384282100517359,
+          "direction_similarity_sem": 0.022244182253844228,
+          "pair_count": 123
+        },
+        {
+          "mean_starting_similarity": 0.9280241724704056,
+          "mean_direction_similarity": 0.07550493118035566,
+          "direction_similarity_sem": 0.026679941617237916,
+          "pair_count": 123
+        },
+        {
+          "mean_starting_similarity": 0.9388537810102147,
+          "mean_direction_similarity": 0.041370992873303376,
+          "direction_similarity_sem": 0.024214556201476226,
+          "pair_count": 122
+        },
+        {
+          "mean_starting_similarity": 0.9483363142006912,
+          "mean_direction_similarity": 0.08617011384452014,
+          "direction_similarity_sem": 0.028000445908118593,
+          "pair_count": 122
+        },
+        {
+          "mean_starting_similarity": 0.9578123317415973,
+          "mean_direction_similarity": 0.11059009119112999,
+          "direction_similarity_sem": 0.02399373750522686,
+          "pair_count": 122
+        },
+        {
+          "mean_starting_similarity": 0.9690767357865128,
+          "mean_direction_similarity": 0.19349701550025145,
+          "direction_similarity_sem": 0.025765543249979865,
+          "pair_count": 122
+        },
+        {
+          "mean_starting_similarity": 0.9827615638178248,
+          "mean_direction_similarity": 0.23078513278302237,
+          "direction_similarity_sem": 0.029059129846143027,
+          "pair_count": 122
+        }
+      ]
+    },
+    "tongueDiameter": {
+      "pair_count": 1225,
+      "starting_cosine_min": 0.7267424782617737,
+      "starting_cosine_median": 0.9339465703663924,
+      "starting_cosine_max": 0.9972543427644088,
+      "spearman_rho": 0.200821424817888,
+      "spearman_jackknife_95ci": [
+        0.04821580449856011,
+        0.3534270451372159
+      ],
+      "mantel_permutation_pvalue": 0.00019998000199980003,
+      "nearest_state_mean_direction_cosine": 0.506363797019509,
+      "nearest_state_median_direction_cosine": 0.5406920013160097,
+      "all_pair_mean_direction_cosine": 0.13971000590418797,
+      "binned_curve": [
+        {
+          "mean_starting_similarity": 0.8252589993337176,
+          "mean_direction_similarity": 0.08010167825619258,
+          "direction_similarity_sem": 0.019195760837797782,
+          "pair_count": 123
+        },
+        {
+          "mean_starting_similarity": 0.8733329597137038,
+          "mean_direction_similarity": 0.09862113597568069,
+          "direction_similarity_sem": 0.019079857702394024,
+          "pair_count": 123
+        },
+        {
+          "mean_starting_similarity": 0.8975094928762001,
+          "mean_direction_similarity": 0.08700351483871586,
+          "direction_similarity_sem": 0.018017066584426002,
+          "pair_count": 123
+        },
+        {
+          "mean_starting_similarity": 0.9148233268436212,
+          "mean_direction_similarity": 0.09056816440402923,
+          "direction_similarity_sem": 0.02253669586340263,
+          "pair_count": 123
+        },
+        {
+          "mean_starting_similarity": 0.9280241724704056,
+          "mean_direction_similarity": 0.0626526672303347,
+          "direction_similarity_sem": 0.025105550750512136,
+          "pair_count": 123
+        },
+        {
+          "mean_starting_similarity": 0.9388537810102147,
+          "mean_direction_similarity": 0.12724817465867908,
+          "direction_similarity_sem": 0.02424664184468705,
+          "pair_count": 122
+        },
+        {
+          "mean_starting_similarity": 0.9483363142006912,
+          "mean_direction_similarity": 0.17798568541861298,
+          "direction_similarity_sem": 0.027385068261194627,
+          "pair_count": 122
+        },
+        {
+          "mean_starting_similarity": 0.9578123317415973,
+          "mean_direction_similarity": 0.16376782108394428,
+          "direction_similarity_sem": 0.02950598073759059,
+          "pair_count": 122
+        },
+        {
+          "mean_starting_similarity": 0.9690767357865128,
+          "mean_direction_similarity": 0.2370507196830336,
+          "direction_similarity_sem": 0.029294126981057815,
+          "pair_count": 122
+        },
+        {
+          "mean_starting_similarity": 0.9827615638178248,
+          "mean_direction_similarity": 0.27439232428623045,
+          "direction_similarity_sem": 0.03424702559652459,
+          "pair_count": 122
+        }
+      ]
+    },
+    "tongueIndex": {
+      "pair_count": 1225,
+      "starting_cosine_min": 0.7267424782617737,
+      "starting_cosine_median": 0.9339465703663924,
+      "starting_cosine_max": 0.9972543427644088,
+      "spearman_rho": 0.19634914324620545,
+      "spearman_jackknife_95ci": [
+        0.06912077419610838,
+        0.3235775122963025
+      ],
+      "mantel_permutation_pvalue": 9.999000099990002e-05,
+      "nearest_state_mean_direction_cosine": 0.21610190497857723,
+      "nearest_state_median_direction_cosine": 0.21758393522032665,
+      "all_pair_mean_direction_cosine": 0.02238699908577386,
+      "binned_curve": [
+        {
+          "mean_starting_similarity": 0.8252589993337176,
+          "mean_direction_similarity": -0.014575818672580485,
+          "direction_similarity_sem": 0.019484278405076046,
+          "pair_count": 123
+        },
+        {
+          "mean_starting_similarity": 0.8733329597137038,
+          "mean_direction_similarity": -0.009900998758320439,
+          "direction_similarity_sem": 0.01908332795184174,
+          "pair_count": 123
+        },
+        {
+          "mean_starting_similarity": 0.8975094928762001,
+          "mean_direction_similarity": -0.01733597897352902,
+          "direction_similarity_sem": 0.020924683736206897,
+          "pair_count": 123
+        },
+        {
+          "mean_starting_similarity": 0.9148233268436212,
+          "mean_direction_similarity": -0.05731147527299121,
+          "direction_similarity_sem": 0.021035120402652686,
+          "pair_count": 123
+        },
+        {
+          "mean_starting_similarity": 0.9280241724704056,
+          "mean_direction_similarity": -0.023787149301683456,
+          "direction_similarity_sem": 0.019992647325537523,
+          "pair_count": 123
+        },
+        {
+          "mean_starting_similarity": 0.9388537810102147,
+          "mean_direction_similarity": 0.011655923639557482,
+          "direction_similarity_sem": 0.021467203166051184,
+          "pair_count": 122
+        },
+        {
+          "mean_starting_similarity": 0.9483363142006912,
+          "mean_direction_similarity": 0.0221508905632988,
+          "direction_similarity_sem": 0.026772832366400462,
+          "pair_count": 122
+        },
+        {
+          "mean_starting_similarity": 0.9578123317415973,
+          "mean_direction_similarity": 0.03808611073774817,
+          "direction_similarity_sem": 0.02522001711656477,
+          "pair_count": 122
+        },
+        {
+          "mean_starting_similarity": 0.9690767357865128,
+          "mean_direction_similarity": 0.09587698721809199,
+          "direction_similarity_sem": 0.028996633004104384,
+          "pair_count": 122
+        },
+        {
+          "mean_starting_similarity": 0.9827615638178248,
+          "mean_direction_similarity": 0.18093647030444163,
+          "direction_similarity_sem": 0.029677644575891463,
+          "pair_count": 122
+        }
+      ]
+    }
+  },
+  "smoothness_holm_pvalues": {
+    "constrictionDiameter": 0.0004999500049995,
+    "constrictionIndex": 0.0004999500049995,
+    "tongueIndex": 0.0004999500049995,
+    "tongueDiameter": 0.0004999500049995,
+    "pitchHz": 0.0004999500049995
+  },
+  "largest_positive_displacement_prediction": {
+    "constrictionDiameter": {
+      "split": "five-fold held-out starting configurations with nested ridge tuning",
+      "fixed_vector": {
+        "mean_direction_cosine": 0.2398808657517105,
+        "median_direction_cosine": 0.27580689458174773,
+        "direction_cosine_std": 0.23015839629930687,
+        "mean_squared_vector_error": 5.006143233187882,
+        "mse_ratio_to_fixed_vector": 1.0,
+        "mse_improvement_over_fixed_vector": 0.0,
+        "mean_norm_absolute_error": 1.4255026224457767
+      },
+      "nearest_state": {
+        "mean_direction_cosine": 0.4250365279807932,
+        "median_direction_cosine": 0.48312265785317915,
+        "direction_cosine_std": 0.29785202085289064,
+        "mean_squared_vector_error": 5.842284645444147,
+        "mse_ratio_to_fixed_vector": 1.167023070117755,
+        "mse_improvement_over_fixed_vector": -0.16702307011775508,
+        "mean_norm_absolute_error": 0.8230584888179413
+      },
+      "linear_state": {
+        "mean_direction_cosine": 0.5836462085986519,
+        "median_direction_cosine": 0.6394151022377728,
+        "direction_cosine_std": 0.24527083644692924,
+        "mean_squared_vector_error": 3.4579354912291684,
+        "mse_ratio_to_fixed_vector": 0.6907384248027549,
+        "mse_improvement_over_fixed_vector": 0.30926157519724506,
+        "mean_norm_absolute_error": 0.7187621161779947
+      },
+      "selected_ridge_alphas": [
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01
+      ],
+      "nearest_vs_fixed_direction_pvalue": 9.999000099990002e-05,
+      "linear_vs_fixed_direction_pvalue": 9.999000099990002e-05
+    },
+    "constrictionIndex": {
+      "split": "five-fold held-out starting configurations with nested ridge tuning",
+      "fixed_vector": {
+        "mean_direction_cosine": 0.02558345739072646,
+        "median_direction_cosine": 0.013188370596631718,
+        "direction_cosine_std": 0.32115090546010605,
+        "mean_squared_vector_error": 9.470310998016322,
+        "mse_ratio_to_fixed_vector": 1.0,
+        "mse_improvement_over_fixed_vector": 0.0,
+        "mean_norm_absolute_error": 2.3892884618900605
+      },
+      "nearest_state": {
+        "mean_direction_cosine": 0.41853686609489593,
+        "median_direction_cosine": 0.5409869777326165,
+        "direction_cosine_std": 0.4169069755180411,
+        "mean_squared_vector_error": 9.637784843726838,
+        "mse_ratio_to_fixed_vector": 1.017684091445951,
+        "mse_improvement_over_fixed_vector": -0.017684091445951067,
+        "mean_norm_absolute_error": 0.7470591660978638
+      },
+      "linear_state": {
+        "mean_direction_cosine": 0.5343272268104097,
+        "median_direction_cosine": 0.634273751009625,
+        "direction_cosine_std": 0.3248911208045415,
+        "mean_squared_vector_error": 6.044748920724004,
+        "mse_ratio_to_fixed_vector": 0.6382840987999395,
+        "mse_improvement_over_fixed_vector": 0.3617159012000605,
+        "mean_norm_absolute_error": 0.878206790338487
+      },
+      "selected_ridge_alphas": [
+        0.01,
+        0.01,
+        0.0001,
+        0.01,
+        0.01
+      ],
+      "nearest_vs_fixed_direction_pvalue": 9.999000099990002e-05,
+      "linear_vs_fixed_direction_pvalue": 9.999000099990002e-05
+    },
+    "pitchHz": {
+      "split": "five-fold held-out starting configurations with nested ridge tuning",
+      "fixed_vector": {
+        "mean_direction_cosine": 0.2671029829817624,
+        "median_direction_cosine": 0.2966007581228107,
+        "direction_cosine_std": 0.25930103521413456,
+        "mean_squared_vector_error": 3.202779089800413,
+        "mse_ratio_to_fixed_vector": 1.0,
+        "mse_improvement_over_fixed_vector": 0.0,
+        "mean_norm_absolute_error": 1.124557791652971
+      },
+      "nearest_state": {
+        "mean_direction_cosine": 0.34453120786505104,
+        "median_direction_cosine": 0.34704483329375324,
+        "direction_cosine_std": 0.32106048230668466,
+        "mean_squared_vector_error": 4.1195420794811755,
+        "mse_ratio_to_fixed_vector": 1.2862398448273535,
+        "mse_improvement_over_fixed_vector": -0.28623984482735354,
+        "mean_norm_absolute_error": 0.730244528632404
+      },
+      "linear_state": {
+        "mean_direction_cosine": 0.44435888246279687,
+        "median_direction_cosine": 0.4774048557420205,
+        "direction_cosine_std": 0.26169784582306643,
+        "mean_squared_vector_error": 2.933587846865322,
+        "mse_ratio_to_fixed_vector": 0.9159507304789273,
+        "mse_improvement_over_fixed_vector": 0.08404926952107272,
+        "mean_norm_absolute_error": 0.6203415067641456
+      },
+      "selected_ridge_alphas": [
+        0.01,
+        0.01,
+        0.0001,
+        0.01,
+        0.01
+      ],
+      "nearest_vs_fixed_direction_pvalue": 0.06479352064793521,
+      "linear_vs_fixed_direction_pvalue": 0.0006999300069993001
+    },
+    "tongueDiameter": {
+      "split": "five-fold held-out starting configurations with nested ridge tuning",
+      "fixed_vector": {
+        "mean_direction_cosine": 0.3513651261245078,
+        "median_direction_cosine": 0.33333854100602456,
+        "direction_cosine_std": 0.23980357080886025,
+        "mean_squared_vector_error": 5.653318775558771,
+        "mse_ratio_to_fixed_vector": 1.0,
+        "mse_improvement_over_fixed_vector": 0.0,
+        "mean_norm_absolute_error": 1.2996713822199968
+      },
+      "nearest_state": {
+        "mean_direction_cosine": 0.48781575725422294,
+        "median_direction_cosine": 0.5399264095402284,
+        "direction_cosine_std": 0.32888807040579715,
+        "mean_squared_vector_error": 4.430342256285595,
+        "mse_ratio_to_fixed_vector": 0.7836710491967088,
+        "mse_improvement_over_fixed_vector": 0.21632895080329118,
+        "mean_norm_absolute_error": 0.6385827437014392
+      },
+      "linear_state": {
+        "mean_direction_cosine": 0.6091905578510652,
+        "median_direction_cosine": 0.715809841839044,
+        "direction_cosine_std": 0.3036707756378216,
+        "mean_squared_vector_error": 2.7151685368760217,
+        "mse_ratio_to_fixed_vector": 0.48027869021195535,
+        "mse_improvement_over_fixed_vector": 0.5197213097880446,
+        "mean_norm_absolute_error": 0.5383951773568014
+      },
+      "selected_ridge_alphas": [
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01
+      ],
+      "nearest_vs_fixed_direction_pvalue": 0.0024997500249975004,
+      "linear_vs_fixed_direction_pvalue": 9.999000099990002e-05
+    },
+    "tongueIndex": {
+      "split": "five-fold held-out starting configurations with nested ridge tuning",
+      "fixed_vector": {
+        "mean_direction_cosine": 0.09336147074717786,
+        "median_direction_cosine": 0.16098460476729057,
+        "direction_cosine_std": 0.23015057976187828,
+        "mean_squared_vector_error": 0.23865506663725164,
+        "mse_ratio_to_fixed_vector": 1.0,
+        "mse_improvement_over_fixed_vector": 0.0,
+        "mean_norm_absolute_error": 0.3221217534783032
+      },
+      "nearest_state": {
+        "mean_direction_cosine": 0.20667010321345078,
+        "median_direction_cosine": 0.2059000355676659,
+        "direction_cosine_std": 0.3877249032558397,
+        "mean_squared_vector_error": 0.3359732436457245,
+        "mse_ratio_to_fixed_vector": 1.4077775443015987,
+        "mse_improvement_over_fixed_vector": -0.40777754430159874,
+        "mean_norm_absolute_error": 0.16028320326093357
+      },
+      "linear_state": {
+        "mean_direction_cosine": 0.22076910804448974,
+        "median_direction_cosine": 0.39417836607008094,
+        "direction_cosine_std": 0.38172881929010094,
+        "mean_squared_vector_error": 0.278036699906524,
+        "mse_ratio_to_fixed_vector": 1.1650148636028383,
+        "mse_improvement_over_fixed_vector": -0.16501486360283835,
+        "mean_norm_absolute_error": 0.18953461079464454
+      },
+      "selected_ridge_alphas": [
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01
+      ],
+      "nearest_vs_fixed_direction_pvalue": 0.0170982901709829,
+      "linear_vs_fixed_direction_pvalue": 0.0018998100189981002
+    }
+  },
+  "linear_predictor_holm_pvalues": {
+    "constrictionDiameter": 0.0004999500049995,
+    "constrictionIndex": 0.0004999500049995,
+    "tongueDiameter": 0.0004999500049995,
+    "pitchHz": 0.0013998600139986002,
+    "tongueIndex": 0.0018998100189981002
+  },
+  "tongue_local_field_prediction": {
+    "split": "five-fold held-out starting configurations with nested ridge tuning",
+    "fixed_vector": {
+      "mean_direction_cosine": 0.11540729240353183,
+      "median_direction_cosine": 0.1496573238011613,
+      "direction_cosine_std": 0.24330179563143367,
+      "mean_squared_vector_error": 0.8658452319650523,
+      "mse_ratio_to_fixed_vector": 1.0,
+      "mse_improvement_over_fixed_vector": 0.0,
+      "mean_norm_absolute_error": 0.6236461161565967
+    },
+    "nearest_state": {
+      "mean_direction_cosine": 0.23156661378074805,
+      "median_direction_cosine": 0.2676900727625814,
+      "direction_cosine_std": 0.36151776075770836,
+      "mean_squared_vector_error": 1.2024252548883505,
+      "mse_ratio_to_fixed_vector": 1.3887300068159103,
+      "mse_improvement_over_fixed_vector": -0.3887300068159103,
+      "mean_norm_absolute_error": 0.2965283278206164
+    },
+    "linear_state": {
+      "mean_direction_cosine": 0.2590696202924781,
+      "median_direction_cosine": 0.3452259685556778,
+      "direction_cosine_std": 0.3774229198485476,
+      "mean_squared_vector_error": 0.9684804084780042,
+      "mse_ratio_to_fixed_vector": 1.1185375546620722,
+      "mse_improvement_over_fixed_vector": -0.11853755466207216,
+      "mean_norm_absolute_error": 0.396048016391437
+    },
+    "selected_ridge_alphas": [
+      1.0,
+      0.01,
+      0.01,
+      0.01,
+      0.01
+    ],
+    "nearest_vs_fixed_direction_pvalue": 0.0103989601039896,
+    "linear_vs_fixed_direction_pvalue": 0.0005999400059994001
+  }
+}

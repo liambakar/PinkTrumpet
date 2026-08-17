@@ -154,6 +154,16 @@ The analysis reports pairwise displacement-vector cosine, alignment to the ordin
 
 The completed 50-configuration run is documented in [`research_representation/REPORT_V2.md`](research_representation/REPORT_V2.md), with its sweep plot, raw embeddings, metadata, and machine-readable analysis kept alongside the report.
 
+## Representation experiment 3
+
+Experiment 3 reuses the Experiment 2 embeddings to test whether intervention directions vary systematically with the starting HuBERT state. It compares pairwise starting-state similarity with displacement-direction similarity, then evaluates fixed-vector, nearest-state, and nested-ridge state-dependent predictors on held-out vocal-tract configurations.
+
+```bash
+.venv/bin/python research_representation/analyze_v3.py
+```
+
+The completed analysis is documented in [`research_representation/REPORT_V3.md`](research_representation/REPORT_V3.md). It includes label-permutation inference for dependent state pairs, Holm correction, a signed tongue-field model across all intervention magnitudes, and separate reporting of direction quality versus full-vector magnitude error.
+
 ## Architecture
 
 - `src/pink-trombone-worklet.js` — real-time glottal source and vocal-tract waveguide
@@ -166,6 +176,7 @@ The completed 50-configuration run is documented in [`research_representation/RE
 - `ml/phoneme_discriminator.py` — scikit-fda loading, matched spectral features, discriminator, and cached model
 - `research_representation/experiment.py` — resumable matched-noise HuBERT displacement extraction
 - `research_representation/analyze_v2.py` — direction, linearity, classification, and regression analysis
+- `research_representation/analyze_v3.py` — state-field smoothness and held-out displacement prediction
 - `server.py` — static development server and local `/api/score` endpoint
 
 ## Attribution
