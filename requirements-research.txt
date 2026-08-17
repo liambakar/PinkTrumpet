@@ -1,0 +1,4 @@
+-r requirements-ml.txt
+matplotlib>=3.9,<4
+torch>=2.4,<3
+transformers>=4.45,<5

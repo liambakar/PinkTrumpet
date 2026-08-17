@@ -140,6 +140,20 @@ This is an adversarial-reward baseline, not a differentiable GAN: Web Audio para
 
 For training, use `PARAMETER_NAMES` as the output-head order and either normalize each field with its `min`/`max` or emit named values. Keep the sanitizer between the model and synthesizer even if the model output layer is already bounded.
 
+## Representation experiment 2
+
+Experiment 2 tests whether the same physical control change produces a stable direction in HuBERT space. It sweeps signed magnitudes for tongue position, tongue diameter, constriction location, constriction diameter, and pitch. Every intervention from a base configuration uses matched synthesis noise, remains inside the public parameter bounds, and is checkpointed as a raw embedding.
+
+```bash
+.venv/bin/python -m pip install -r requirements-research.txt
+.venv/bin/python research_representation/experiment.py --samples 50
+.venv/bin/python research_representation/analyze_v2.py
+```
+
+The analysis reports pairwise displacement-vector cosine, alignment to the ordinary and leave-one-out mean directions, sign-flip significance, displacement-norm linearity, group-held-out transformation classification, and group-held-out signed-magnitude regression. Interrupted embedding runs resume from `experiment_v2.npz`. Use `--extractor mock` only to smoke-test the pipeline without downloading HuBERT.
+
+The completed 50-configuration run is documented in [`research_representation/REPORT_V2.md`](research_representation/REPORT_V2.md), with its sweep plot, raw embeddings, metadata, and machine-readable analysis kept alongside the report.
+
 ## Architecture
 
 - `src/pink-trombone-worklet.js` — real-time glottal source and vocal-tract waveguide
@@ -150,6 +164,8 @@ For training, use `PARAMETER_NAMES` as the output-head order and either normaliz
 - `src/tract-visualizer.js` — responsive canvas display and pointer-to-parameter mapping
 - `src/app.js` — UI wiring only; model code does not need it
 - `ml/phoneme_discriminator.py` — scikit-fda loading, matched spectral features, discriminator, and cached model
+- `research_representation/experiment.py` — resumable matched-noise HuBERT displacement extraction
+- `research_representation/analyze_v2.py` — direction, linearity, classification, and regression analysis
 - `server.py` — static development server and local `/api/score` endpoint
 
 ## Attribution

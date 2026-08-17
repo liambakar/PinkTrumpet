@@ -1,0 +1,144 @@
+{
+  "experiment": "physical-displacement-directions-v2",
+  "created_at_unix": 1786988435.03333,
+  "sample_count": 50,
+  "seed": 20260817,
+  "duration_seconds": 0.2,
+  "warmup_seconds": 0.1,
+  "synthesis_sample_rate_hz": 44100,
+  "embedding_sample_rate_hz": 16000,
+  "matched_noise_within_configuration": true,
+  "vibrato_wobble_aspiration_and_frication_disabled": true,
+  "smooth_source_modulation": "deterministic and matched within each configuration",
+  "extractor": "hubert",
+  "model_id": "facebook/hubert-base-ls960",
+  "requested_revision": "dba3bb02fda4248b6e082697eee756de8fe8aa8a",
+  "resolved_revision": "dba3bb02fda4248b6e082697eee756de8fe8aa8a",
+  "embedding_dimension": 768,
+  "device": "mps",
+  "positive_only": false,
+  "interventions": [
+    {
+      "name": "tongueIndex",
+      "deltas": [
+        -0.5,
+        -0.4,
+        -0.3,
+        -0.2,
+        -0.1,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5
+      ],
+      "base_range": [
+        12.5,
+        28.5
+      ],
+      "unit": "tract sections"
+    },
+    {
+      "name": "tongueDiameter",
+      "deltas": [
+        -0.5,
+        -0.4,
+        -0.3,
+        -0.2,
+        -0.1,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5
+      ],
+      "base_range": [
+        2.55,
+        3.0
+      ],
+      "unit": "diameter units"
+    },
+    {
+      "name": "constrictionIndex",
+      "deltas": [
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "base_range": [
+        20.0,
+        37.0
+      ],
+      "unit": "tract sections"
+    },
+    {
+      "name": "constrictionDiameter",
+      "deltas": [
+        -0.5,
+        -0.4,
+        -0.3,
+        -0.2,
+        -0.1,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5
+      ],
+      "base_range": [
+        0.55,
+        0.9
+      ],
+      "unit": "diameter units"
+    },
+    {
+      "name": "pitchHz",
+      "deltas": [
+        -25,
+        -20,
+        -15,
+        -10,
+        -5,
+        5,
+        10,
+        15,
+        20,
+        25
+      ],
+      "base_range": [
+        100.0,
+        200.0
+      ],
+      "unit": "Hz"
+    }
+  ],
+  "static_parameters": {
+    "tenseness": 0.6,
+    "intensity": 1.0,
+    "loudness": 1.0,
+    "voicing": 1.0,
+    "aspiration": 0.0,
+    "vibrato": 0.0,
+    "wobble": 0.0,
+    "fricativeIntensity": 0.0,
+    "velum": 0.01
+  },
+  "engine_sha256": "380e5ffd8395b0d5c69a37ca42fe832e256510ce2204abf88a135f25a7b76075",
+  "git_revision": "85b28e200ca6e23852fe65e878765a4b490a30e0",
+  "python": "3.13.6 (main, Aug  6 2025, 13:05:20) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.6.1-arm64-arm-64bit-Mach-O",
+  "versions": {
+    "numpy": "2.5.2",
+    "scipy": "1.18.0",
+    "torch": "2.13.0",
+    "transformers": "4.57.6"
+  },
+  "completed_samples": 50
+}

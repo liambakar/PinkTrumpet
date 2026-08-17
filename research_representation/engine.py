@@ -267,11 +267,12 @@ class VocalTract:
         self.reshape(block_time)
         self.calculate_reflections()
 
-def generate_audio(params, duration_sec=0.1):
+def generate_audio(params, duration_sec=0.1, seed=None):
     glottis = Glottis(SAMPLE_RATE)
     tract = VocalTract(SAMPLE_RATE)
     asp_filter = BandpassFilter(SAMPLE_RATE, 500, 0.5)
     fric_filter = BandpassFilter(SAMPLE_RATE, 1000, 0.5)
+    rng = np.random.default_rng(seed)
     block_len = 512
     num_samples = int(SAMPLE_RATE * duration_sec)
     samples = np.zeros(num_samples)
@@ -283,7 +284,7 @@ def generate_audio(params, duration_sec=0.1):
     for i in range(num_samples):
         glottis.update(params)
         tract.set_targets(params)
-        white_noise = np.random.random()
+        white_noise = rng.random()
         asp_noise = asp_filter.process(white_noise)
         fric_noise = fric_filter.process(white_noise)
         glottal = glottis.run(asp_noise)
@@ -306,5 +307,9 @@ def generate_audio(params, duration_sec=0.1):
 if __name__ == "__main__":
     import sys
     config = json.loads(sys.stdin.read())
-    audio = generate_audio(config['params'], config.get('duration', 0.1))
+    audio = generate_audio(
+        config['params'],
+        config.get('duration', 0.1),
+        seed=config.get('seed'),
+    )
     print(json.dumps(audio.tolist()))
