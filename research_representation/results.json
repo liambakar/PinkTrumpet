@@ -1,0 +1,1702 @@
+[
+  {
+    "base_params": {
+      "tongueIndex": 20.57627894185336,
+      "tongueDiameter": 2.127377812908845,
+      "pitchHz": 143.58077378834338,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9959842562675476,
+    "sim_pitch": 0.993601381778717,
+    "dist_fwd": 0.8844850063323975,
+    "dist_pitch": 1.1172212362289429
+  },
+  {
+    "base_params": {
+      "tongueIndex": 26.406183387117427,
+      "tongueDiameter": 2.1071184333798914,
+      "pitchHz": 182.14776941623222,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9533427357673645,
+    "sim_pitch": 0.940503716468811,
+    "dist_fwd": 3.075178384780884,
+    "dist_pitch": 3.4404947757720947
+  },
+  {
+    "base_params": {
+      "tongueIndex": 17.213937461292797,
+      "tongueDiameter": 2.532157224149684,
+      "pitchHz": 170.9104521325907,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9982172250747681,
+    "sim_pitch": 0.9886563420295715,
+    "dist_fwd": 0.6603471636772156,
+    "dist_pitch": 1.6553047895431519
+  },
+  {
+    "base_params": {
+      "tongueIndex": 25.434401810174784,
+      "tongueDiameter": 2.138926832061554,
+      "pitchHz": 106.64809276873928,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9769014120101929,
+    "sim_pitch": 0.9052767157554626,
+    "dist_fwd": 2.1451966762542725,
+    "dist_pitch": 4.337845325469971
+  },
+  {
+    "base_params": {
+      "tongueIndex": 13.361950095289664,
+      "tongueDiameter": 2.3159115043600136,
+      "pitchHz": 138.57259148967884,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.998045027256012,
+    "sim_pitch": 0.9919968247413635,
+    "dist_fwd": 0.6717221140861511,
+    "dist_pitch": 1.3598648309707642
+  },
+  {
+    "base_params": {
+      "tongueIndex": 18.07102882574749,
+      "tongueDiameter": 2.5556862931017554,
+      "pitchHz": 188.4498798435405,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9821100234985352,
+    "sim_pitch": 0.9869326949119568,
+    "dist_fwd": 2.0031113624572754,
+    "dist_pitch": 1.7151168584823608
+  },
+  {
+    "base_params": {
+      "tongueIndex": 24.07152131596415,
+      "tongueDiameter": 2.4413387354469145,
+      "pitchHz": 166.7455064668796,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9990443587303162,
+    "sim_pitch": 0.997153639793396,
+    "dist_fwd": 0.43352290987968445,
+    "dist_pitch": 0.7478720545768738
+  },
+  {
+    "base_params": {
+      "tongueIndex": 29.56042092450797,
+      "tongueDiameter": 2.579988584680018,
+      "pitchHz": 107.5103753288136,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9763733744621277,
+    "sim_pitch": 0.9772579669952393,
+    "dist_fwd": 2.152092456817627,
+    "dist_pitch": 2.1074516773223877
+  },
+  {
+    "base_params": {
+      "tongueIndex": 17.867871126961578,
+      "tongueDiameter": 2.445807266943168,
+      "pitchHz": 170.0951317599982,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9958238005638123,
+    "sim_pitch": 0.9765964150428772,
+    "dist_fwd": 1.0005792379379272,
+    "dist_pitch": 2.3425095081329346
+  },
+  {
+    "base_params": {
+      "tongueIndex": 17.833669049289036,
+      "tongueDiameter": 2.472876447665616,
+      "pitchHz": 184.73914742809072,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9938227534294128,
+    "sim_pitch": 0.983526349067688,
+    "dist_fwd": 1.210525393486023,
+    "dist_pitch": 1.9597206115722656
+  },
+  {
+    "base_params": {
+      "tongueIndex": 17.445834656627724,
+      "tongueDiameter": 2.2956909524017677,
+      "pitchHz": 197.92835808570462,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9956701397895813,
+    "sim_pitch": 0.9650254845619202,
+    "dist_fwd": 0.9665738940238953,
+    "dist_pitch": 2.750934362411499
+  },
+  {
+    "base_params": {
+      "tongueIndex": 25.34026088470806,
+      "tongueDiameter": 2.277673723991757,
+      "pitchHz": 157.71880442201447,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9984046220779419,
+    "sim_pitch": 0.994367778301239,
+    "dist_fwd": 0.5573323965072632,
+    "dist_pitch": 1.0452213287353516
+  },
+  {
+    "base_params": {
+      "tongueIndex": 20.676999089321818,
+      "tongueDiameter": 2.6426162454594495,
+      "pitchHz": 191.12352455864902,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9947304725646973,
+    "sim_pitch": 0.9933519959449768,
+    "dist_fwd": 1.034926414489746,
+    "dist_pitch": 1.1616483926773071
+  },
+  {
+    "base_params": {
+      "tongueIndex": 24.73607908848934,
+      "tongueDiameter": 2.4967732727400764,
+      "pitchHz": 189.92318498545887,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9989170432090759,
+    "sim_pitch": 0.9940662384033203,
+    "dist_fwd": 0.4597746729850769,
+    "dist_pitch": 1.0754566192626953
+  },
+  {
+    "base_params": {
+      "tongueIndex": 15.830228165976003,
+      "tongueDiameter": 2.2120335796456896,
+      "pitchHz": 192.5742255983242,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9971391558647156,
+    "sim_pitch": 0.9706425070762634,
+    "dist_fwd": 0.8019360899925232,
+    "dist_pitch": 2.5485265254974365
+  },
+  {
+    "base_params": {
+      "tongueIndex": 28.97029951092967,
+      "tongueDiameter": 2.1148078646906807,
+      "pitchHz": 166.01291620247588,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9636958241462708,
+    "sim_pitch": 0.9634735584259033,
+    "dist_fwd": 2.706561326980591,
+    "dist_pitch": 2.712224245071411
+  },
+  {
+    "base_params": {
+      "tongueIndex": 15.65364411351199,
+      "tongueDiameter": 2.1775133942759974,
+      "pitchHz": 138.88797186715078,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9923760294914246,
+    "sim_pitch": 0.974455714225769,
+    "dist_fwd": 1.3208730220794678,
+    "dist_pitch": 2.4650628566741943
+  },
+  {
+    "base_params": {
+      "tongueIndex": 27.556516538194188,
+      "tongueDiameter": 2.780922443314398,
+      "pitchHz": 196.84840804407318,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9985237717628479,
+    "sim_pitch": 0.967684268951416,
+    "dist_fwd": 0.5321704149246216,
+    "dist_pitch": 2.5081124305725098
+  },
+  {
+    "base_params": {
+      "tongueIndex": 20.257299383398667,
+      "tongueDiameter": 2.7185011491118263,
+      "pitchHz": 104.18415557110666,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9988443851470947,
+    "sim_pitch": 0.9960079193115234,
+    "dist_fwd": 0.48816248774528503,
+    "dist_pitch": 0.9052214026451111
+  },
+  {
+    "base_params": {
+      "tongueIndex": 23.528158915415773,
+      "tongueDiameter": 2.2624036037085786,
+      "pitchHz": 125.05144003690975,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9982233643531799,
+    "sim_pitch": 0.9912090301513672,
+    "dist_fwd": 0.5914096832275391,
+    "dist_pitch": 1.3160194158554077
+  },
+  {
+    "base_params": {
+      "tongueIndex": 28.499003509641202,
+      "tongueDiameter": 2.196634240434062,
+      "pitchHz": 192.34299927764752,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9619858860969543,
+    "sim_pitch": 0.8984308838844299,
+    "dist_fwd": 2.7707414627075195,
+    "dist_pitch": 4.510684967041016
+  },
+  {
+    "base_params": {
+      "tongueIndex": 22.192410257878304,
+      "tongueDiameter": 2.407682934162268,
+      "pitchHz": 124.63128076645076,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9986409544944763,
+    "sim_pitch": 0.9972734451293945,
+    "dist_fwd": 0.519603967666626,
+    "dist_pitch": 0.7360726594924927
+  },
+  {
+    "base_params": {
+      "tongueIndex": 17.073483708486215,
+      "tongueDiameter": 2.4142097786598478,
+      "pitchHz": 126.56605228773955,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9989203810691833,
+    "sim_pitch": 0.9825364351272583,
+    "dist_fwd": 0.5056928396224976,
+    "dist_pitch": 2.0298984050750732
+  },
+  {
+    "base_params": {
+      "tongueIndex": 23.193042416240207,
+      "tongueDiameter": 2.667155838933117,
+      "pitchHz": 137.49853455096584,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9976223111152649,
+    "sim_pitch": 0.9966279864311218,
+    "dist_fwd": 0.6875903606414795,
+    "dist_pitch": 0.8184106349945068
+  },
+  {
+    "base_params": {
+      "tongueIndex": 18.752922161530957,
+      "tongueDiameter": 2.7101886533301434,
+      "pitchHz": 171.0343492404582,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9956642389297485,
+    "sim_pitch": 0.9861102104187012,
+    "dist_fwd": 0.9493715167045593,
+    "dist_pitch": 1.6932567358016968
+  },
+  {
+    "base_params": {
+      "tongueIndex": 26.278748001979444,
+      "tongueDiameter": 2.6656758015220348,
+      "pitchHz": 137.08346925426912,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.996310293674469,
+    "sim_pitch": 0.9878696203231812,
+    "dist_fwd": 0.8481608629226685,
+    "dist_pitch": 1.5391777753829956
+  },
+  {
+    "base_params": {
+      "tongueIndex": 21.744114395035197,
+      "tongueDiameter": 2.1272928830265987,
+      "pitchHz": 181.74772596154975,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9958221316337585,
+    "sim_pitch": 0.9946418404579163,
+    "dist_fwd": 0.8988436460494995,
+    "dist_pitch": 1.0161335468292236
+  },
+  {
+    "base_params": {
+      "tongueIndex": 20.67039503371825,
+      "tongueDiameter": 2.0521803835927144,
+      "pitchHz": 184.00165796729334,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9941259622573853,
+    "sim_pitch": 0.9883761405944824,
+    "dist_fwd": 1.062515377998352,
+    "dist_pitch": 1.4953770637512207
+  },
+  {
+    "base_params": {
+      "tongueIndex": 21.127329804378576,
+      "tongueDiameter": 2.7629157189108815,
+      "pitchHz": 172.9661696194825,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9988367557525635,
+    "sim_pitch": 0.9799047112464905,
+    "dist_fwd": 0.48605120182037354,
+    "dist_pitch": 2.015401840209961
+  },
+  {
+    "base_params": {
+      "tongueIndex": 13.15037258129561,
+      "tongueDiameter": 2.251729054503222,
+      "pitchHz": 134.1230450260564,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9979684352874756,
+    "sim_pitch": 0.9930348992347717,
+    "dist_fwd": 0.6783453226089478,
+    "dist_pitch": 1.270303726196289
+  },
+  {
+    "base_params": {
+      "tongueIndex": 13.017201178562924,
+      "tongueDiameter": 2.3016786982085233,
+      "pitchHz": 168.7215251373015,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9986954927444458,
+    "sim_pitch": 0.9833758473396301,
+    "dist_fwd": 0.5560738444328308,
+    "dist_pitch": 1.9799350500106812
+  },
+  {
+    "base_params": {
+      "tongueIndex": 12.288767091565159,
+      "tongueDiameter": 2.7694621849712826,
+      "pitchHz": 157.91616192366456,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9993053078651428,
+    "sim_pitch": 0.9521464109420776,
+    "dist_fwd": 0.38083019852638245,
+    "dist_pitch": 3.185991048812866
+  },
+  {
+    "base_params": {
+      "tongueIndex": 17.013725075862926,
+      "tongueDiameter": 2.4872688051051366,
+      "pitchHz": 149.39845020348173,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9974833726882935,
+    "sim_pitch": 0.9606009721755981,
+    "dist_fwd": 0.7552424073219299,
+    "dist_pitch": 3.0339102745056152
+  },
+  {
+    "base_params": {
+      "tongueIndex": 24.128334334313934,
+      "tongueDiameter": 2.7240746566839373,
+      "pitchHz": 121.05023175047539,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9984450936317444,
+    "sim_pitch": 0.9980157613754272,
+    "dist_fwd": 0.5583203434944153,
+    "dist_pitch": 0.6311020255088806
+  },
+  {
+    "base_params": {
+      "tongueIndex": 20.37657994999177,
+      "tongueDiameter": 2.675048694816261,
+      "pitchHz": 199.0682932383232,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.996843159198761,
+    "sim_pitch": 0.9888145923614502,
+    "dist_fwd": 0.8072490692138672,
+    "dist_pitch": 1.5166826248168945
+  },
+  {
+    "base_params": {
+      "tongueIndex": 18.68067251672208,
+      "tongueDiameter": 2.6450229801122322,
+      "pitchHz": 181.33906002457917,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9838727712631226,
+    "sim_pitch": 0.9884237051010132,
+    "dist_fwd": 1.849946141242981,
+    "dist_pitch": 1.5688015222549438
+  },
+  {
+    "base_params": {
+      "tongueIndex": 19.868452221899872,
+      "tongueDiameter": 2.3463496638631893,
+      "pitchHz": 121.8910395902186,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9961236715316772,
+    "sim_pitch": 0.9950405955314636,
+    "dist_fwd": 0.8861899375915527,
+    "dist_pitch": 1.0020378828048706
+  },
+  {
+    "base_params": {
+      "tongueIndex": 15.952540254364276,
+      "tongueDiameter": 2.043913204741382,
+      "pitchHz": 111.87920229540873,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9923006296157837,
+    "sim_pitch": 0.9867296814918518,
+    "dist_fwd": 1.2886629104614258,
+    "dist_pitch": 1.6983755826950073
+  },
+  {
+    "base_params": {
+      "tongueIndex": 20.014928002940774,
+      "tongueDiameter": 2.730257302011836,
+      "pitchHz": 105.17637618278087,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9978880882263184,
+    "sim_pitch": 0.988069474697113,
+    "dist_fwd": 0.6635005474090576,
+    "dist_pitch": 1.568605661392212
+  },
+  {
+    "base_params": {
+      "tongueIndex": 19.56139107861813,
+      "tongueDiameter": 2.1832232123800823,
+      "pitchHz": 177.22100378278031,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9883123636245728,
+    "sim_pitch": 0.9888272881507874,
+    "dist_fwd": 1.5481194257736206,
+    "dist_pitch": 1.5146161317825317
+  },
+  {
+    "base_params": {
+      "tongueIndex": 16.010150865394753,
+      "tongueDiameter": 2.056590072283229,
+      "pitchHz": 124.76854423275095,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9927811026573181,
+    "sim_pitch": 0.9803808331489563,
+    "dist_fwd": 1.2500323057174683,
+    "dist_pitch": 2.0813820362091064
+  },
+  {
+    "base_params": {
+      "tongueIndex": 27.83746180024048,
+      "tongueDiameter": 2.3437430414879605,
+      "pitchHz": 114.69778528753204,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9924517869949341,
+    "sim_pitch": 0.9704954624176025,
+    "dist_fwd": 1.2287287712097168,
+    "dist_pitch": 2.4026598930358887
+  },
+  {
+    "base_params": {
+      "tongueIndex": 12.622253919812396,
+      "tongueDiameter": 2.3464389762825935,
+      "pitchHz": 136.39609960175036,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9992457628250122,
+    "sim_pitch": 0.9848076105117798,
+    "dist_fwd": 0.41790661215782166,
+    "dist_pitch": 1.8731149435043335
+  },
+  {
+    "base_params": {
+      "tongueIndex": 26.727378825478933,
+      "tongueDiameter": 2.8316252826737496,
+      "pitchHz": 195.3128556754455,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.998361349105835,
+    "sim_pitch": 0.9942175149917603,
+    "dist_fwd": 0.5672890543937683,
+    "dist_pitch": 1.0630470514297485
+  },
+  {
+    "base_params": {
+      "tongueIndex": 16.868388228763052,
+      "tongueDiameter": 2.3630497528617833,
+      "pitchHz": 198.74624405700268,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9979670643806458,
+    "sim_pitch": 0.9723557829856873,
+    "dist_fwd": 0.6806453466415405,
+    "dist_pitch": 2.5073091983795166
+  },
+  {
+    "base_params": {
+      "tongueIndex": 17.950133744265187,
+      "tongueDiameter": 2.1621230483476728,
+      "pitchHz": 196.58737078626785,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9982708692550659,
+    "sim_pitch": 0.9674115180969238,
+    "dist_fwd": 0.6050552725791931,
+    "dist_pitch": 2.609267473220825
+  },
+  {
+    "base_params": {
+      "tongueIndex": 15.734093128217587,
+      "tongueDiameter": 2.4213444937674056,
+      "pitchHz": 127.33998832450233,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9987038969993591,
+    "sim_pitch": 0.9783863425254822,
+    "dist_fwd": 0.5590006709098816,
+    "dist_pitch": 2.274958610534668
+  },
+  {
+    "base_params": {
+      "tongueIndex": 21.719881063010448,
+      "tongueDiameter": 2.528049284265795,
+      "pitchHz": 104.54551175079295,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9942179322242737,
+    "sim_pitch": 0.990811288356781,
+    "dist_fwd": 1.08242928981781,
+    "dist_pitch": 1.3613780736923218
+  },
+  {
+    "base_params": {
+      "tongueIndex": 29.918465837667874,
+      "tongueDiameter": 2.4831238021570856,
+      "pitchHz": 112.71770995089437,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9987813234329224,
+    "sim_pitch": 0.975788414478302,
+    "dist_fwd": 0.4970901310443878,
+    "dist_pitch": 2.2001190185546875
+  },
+  {
+    "base_params": {
+      "tongueIndex": 17.4536102573894,
+      "tongueDiameter": 2.891304491789305,
+      "pitchHz": 166.85611332784248,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9993373155593872,
+    "sim_pitch": 0.9770779013633728,
+    "dist_fwd": 0.37178999185562134,
+    "dist_pitch": 2.190251588821411
+  },
+  {
+    "base_params": {
+      "tongueIndex": 12.762240360479524,
+      "tongueDiameter": 2.4858697116547614,
+      "pitchHz": 107.91803795054187,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9991715550422668,
+    "sim_pitch": 0.9778783321380615,
+    "dist_fwd": 0.43759799003601074,
+    "dist_pitch": 2.2572829723358154
+  },
+  {
+    "base_params": {
+      "tongueIndex": 29.65236070622545,
+      "tongueDiameter": 2.718598430481252,
+      "pitchHz": 166.69363231086567,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9997336864471436,
+    "sim_pitch": 0.9858615398406982,
+    "dist_fwd": 0.2267591804265976,
+    "dist_pitch": 1.6526868343353271
+  },
+  {
+    "base_params": {
+      "tongueIndex": 20.155211965902616,
+      "tongueDiameter": 2.493741776799202,
+      "pitchHz": 182.46629822129626,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9944244027137756,
+    "sim_pitch": 0.9923093318939209,
+    "dist_fwd": 1.065454125404358,
+    "dist_pitch": 1.2563070058822632
+  },
+  {
+    "base_params": {
+      "tongueIndex": 12.69359176162182,
+      "tongueDiameter": 2.4662835603347277,
+      "pitchHz": 118.76199514610582,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.998740017414093,
+    "sim_pitch": 0.9829611778259277,
+    "dist_fwd": 0.5403870344161987,
+    "dist_pitch": 1.9780367612838745
+  },
+  {
+    "base_params": {
+      "tongueIndex": 28.113197181349907,
+      "tongueDiameter": 2.353347940135231,
+      "pitchHz": 102.35303528626409,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9891244173049927,
+    "sim_pitch": 0.9156065583229065,
+    "dist_fwd": 1.48271644115448,
+    "dist_pitch": 4.086261749267578
+  },
+  {
+    "base_params": {
+      "tongueIndex": 21.82622736630109,
+      "tongueDiameter": 2.5556325666966684,
+      "pitchHz": 122.50831851454168,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9989842772483826,
+    "sim_pitch": 0.9883012771606445,
+    "dist_fwd": 0.4537723660469055,
+    "dist_pitch": 1.5328642129898071
+  },
+  {
+    "base_params": {
+      "tongueIndex": 16.69537001286291,
+      "tongueDiameter": 2.778887636565295,
+      "pitchHz": 198.69276495649842,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.99739009141922,
+    "sim_pitch": 0.9898102283477783,
+    "dist_fwd": 0.7485714554786682,
+    "dist_pitch": 1.4742403030395508
+  },
+  {
+    "base_params": {
+      "tongueIndex": 20.208468243248774,
+      "tongueDiameter": 2.416680210364037,
+      "pitchHz": 109.72576054443016,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9968311786651611,
+    "sim_pitch": 0.9901943206787109,
+    "dist_fwd": 0.8030093908309937,
+    "dist_pitch": 1.4103028774261475
+  },
+  {
+    "base_params": {
+      "tongueIndex": 23.94003384396879,
+      "tongueDiameter": 2.0547267292183924,
+      "pitchHz": 149.09891509192224,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9871498346328735,
+    "sim_pitch": 0.9226738214492798,
+    "dist_fwd": 1.5692683458328247,
+    "dist_pitch": 3.8512609004974365
+  },
+  {
+    "base_params": {
+      "tongueIndex": 15.654722818132722,
+      "tongueDiameter": 2.8667930933805117,
+      "pitchHz": 186.26978960740863,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9992879629135132,
+    "sim_pitch": 0.9922731518745422,
+    "dist_fwd": 0.39430999755859375,
+    "dist_pitch": 1.2973579168319702
+  },
+  {
+    "base_params": {
+      "tongueIndex": 28.585714140464553,
+      "tongueDiameter": 2.8588766847012526,
+      "pitchHz": 136.13294715932065,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.999053955078125,
+    "sim_pitch": 0.9520964622497559,
+    "dist_fwd": 0.43712523579597473,
+    "dist_pitch": 3.0754525661468506
+  },
+  {
+    "base_params": {
+      "tongueIndex": 22.124511973574485,
+      "tongueDiameter": 2.5258175737338813,
+      "pitchHz": 127.67076907052385,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9987981915473938,
+    "sim_pitch": 0.9957018494606018,
+    "dist_fwd": 0.4884049594402313,
+    "dist_pitch": 0.9253028035163879
+  },
+  {
+    "base_params": {
+      "tongueIndex": 19.724450961126713,
+      "tongueDiameter": 2.612816119116749,
+      "pitchHz": 176.0781852441034,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9958152174949646,
+    "sim_pitch": 0.9860121011734009,
+    "dist_fwd": 0.9178006649017334,
+    "dist_pitch": 1.6794224977493286
+  },
+  {
+    "base_params": {
+      "tongueIndex": 28.982224019632934,
+      "tongueDiameter": 2.366819162918996,
+      "pitchHz": 105.01064504487503,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.989470899105072,
+    "sim_pitch": 0.9828570485115051,
+    "dist_fwd": 1.4709742069244385,
+    "dist_pitch": 1.8554224967956543
+  },
+  {
+    "base_params": {
+      "tongueIndex": 13.251213287312863,
+      "tongueDiameter": 2.3394535910246006,
+      "pitchHz": 121.62583234341945,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9992266893386841,
+    "sim_pitch": 0.9917575716972351,
+    "dist_fwd": 0.42457014322280884,
+    "dist_pitch": 1.3776788711547852
+  },
+  {
+    "base_params": {
+      "tongueIndex": 12.452026214240458,
+      "tongueDiameter": 2.3279777186328117,
+      "pitchHz": 154.6055834062835,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9970443844795227,
+    "sim_pitch": 0.9919194579124451,
+    "dist_fwd": 0.8391792178153992,
+    "dist_pitch": 1.385585069656372
+  },
+  {
+    "base_params": {
+      "tongueIndex": 12.822442356063974,
+      "tongueDiameter": 2.8906421386314465,
+      "pitchHz": 172.3556011863163,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.99912428855896,
+    "sim_pitch": 0.9920474886894226,
+    "dist_fwd": 0.42986467480659485,
+    "dist_pitch": 1.291949987411499
+  },
+  {
+    "base_params": {
+      "tongueIndex": 25.903988720438413,
+      "tongueDiameter": 2.867542412384621,
+      "pitchHz": 180.56241722994358,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9995067715644836,
+    "sim_pitch": 0.9819194078445435,
+    "dist_fwd": 0.31131649017333984,
+    "dist_pitch": 1.8856170177459717
+  },
+  {
+    "base_params": {
+      "tongueIndex": 15.436151377586743,
+      "tongueDiameter": 2.6074752875757796,
+      "pitchHz": 100.21090763107073,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9990576505661011,
+    "sim_pitch": 0.9923949837684631,
+    "dist_fwd": 0.4606855511665344,
+    "dist_pitch": 1.306625485420227
+  },
+  {
+    "base_params": {
+      "tongueIndex": 20.139167640131554,
+      "tongueDiameter": 2.6588167476630793,
+      "pitchHz": 129.34194071603662,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9964889287948608,
+    "sim_pitch": 0.994041919708252,
+    "dist_fwd": 0.8502101302146912,
+    "dist_pitch": 1.10697603225708
+  },
+  {
+    "base_params": {
+      "tongueIndex": 12.948853722481378,
+      "tongueDiameter": 2.4075991188752566,
+      "pitchHz": 124.84087346482156,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9983879923820496,
+    "sim_pitch": 0.9692853093147278,
+    "dist_fwd": 0.6101176142692566,
+    "dist_pitch": 2.6590609550476074
+  },
+  {
+    "base_params": {
+      "tongueIndex": 16.587965928618605,
+      "tongueDiameter": 2.1041768548189452,
+      "pitchHz": 130.92567129613008,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9794577360153198,
+    "sim_pitch": 0.9492101073265076,
+    "dist_fwd": 2.1281027793884277,
+    "dist_pitch": 3.411804437637329
+  },
+  {
+    "base_params": {
+      "tongueIndex": 12.048360382848333,
+      "tongueDiameter": 2.8298382593928144,
+      "pitchHz": 192.3135178178502,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9982937574386597,
+    "sim_pitch": 0.9864287972450256,
+    "dist_fwd": 0.5963099002838135,
+    "dist_pitch": 1.6884546279907227
+  },
+  {
+    "base_params": {
+      "tongueIndex": 12.051392167010803,
+      "tongueDiameter": 2.873361109209951,
+      "pitchHz": 163.51617466530752,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9993165731430054,
+    "sim_pitch": 0.9769048094749451,
+    "dist_fwd": 0.37384167313575745,
+    "dist_pitch": 2.202960729598999
+  },
+  {
+    "base_params": {
+      "tongueIndex": 12.262741398347398,
+      "tongueDiameter": 2.6832208181975323,
+      "pitchHz": 107.04747542856524,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.999060869216919,
+    "sim_pitch": 0.9890219569206238,
+    "dist_fwd": 0.447181761264801,
+    "dist_pitch": 1.5209317207336426
+  },
+  {
+    "base_params": {
+      "tongueIndex": 13.71680764870666,
+      "tongueDiameter": 2.806755728425786,
+      "pitchHz": 111.17996401318364,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.999376654624939,
+    "sim_pitch": 0.9944550395011902,
+    "dist_fwd": 0.3613935112953186,
+    "dist_pitch": 1.0787067413330078
+  },
+  {
+    "base_params": {
+      "tongueIndex": 12.692318967795934,
+      "tongueDiameter": 2.192686053214382,
+      "pitchHz": 180.76758579409514,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9975583553314209,
+    "sim_pitch": 0.9562523365020752,
+    "dist_fwd": 0.7634111046791077,
+    "dist_pitch": 3.198586940765381
+  },
+  {
+    "base_params": {
+      "tongueIndex": 20.392152776247002,
+      "tongueDiameter": 2.6096087258865577,
+      "pitchHz": 136.7892883070649,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9979324340820312,
+    "sim_pitch": 0.9946903586387634,
+    "dist_fwd": 0.6469374895095825,
+    "dist_pitch": 1.0366286039352417
+  },
+  {
+    "base_params": {
+      "tongueIndex": 17.098606330221305,
+      "tongueDiameter": 2.4367756717049356,
+      "pitchHz": 138.98285222258164,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9970924258232117,
+    "sim_pitch": 0.9977273344993591,
+    "dist_fwd": 0.8224213719367981,
+    "dist_pitch": 0.7297500967979431
+  },
+  {
+    "base_params": {
+      "tongueIndex": 14.974051426680408,
+      "tongueDiameter": 2.0524189594574014,
+      "pitchHz": 184.6359843995139,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9963728189468384,
+    "sim_pitch": 0.9914382696151733,
+    "dist_fwd": 0.8733105659484863,
+    "dist_pitch": 1.3348023891448975
+  },
+  {
+    "base_params": {
+      "tongueIndex": 24.84837933590223,
+      "tongueDiameter": 2.120434445476394,
+      "pitchHz": 183.02888138569728,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9974744319915771,
+    "sim_pitch": 0.9484586119651794,
+    "dist_fwd": 0.7123828530311584,
+    "dist_pitch": 3.252462387084961
+  },
+  {
+    "base_params": {
+      "tongueIndex": 26.065766791805714,
+      "tongueDiameter": 2.485709195804005,
+      "pitchHz": 167.07132070524716,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.996783435344696,
+    "sim_pitch": 0.9941984415054321,
+    "dist_fwd": 0.7886724472045898,
+    "dist_pitch": 1.0598713159561157
+  },
+  {
+    "base_params": {
+      "tongueIndex": 13.975019466399091,
+      "tongueDiameter": 2.2896701171636877,
+      "pitchHz": 173.36167241175298,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9974255561828613,
+    "sim_pitch": 0.9732537865638733,
+    "dist_fwd": 0.781297504901886,
+    "dist_pitch": 2.505685329437256
+  },
+  {
+    "base_params": {
+      "tongueIndex": 29.801191263331894,
+      "tongueDiameter": 2.2160467001564577,
+      "pitchHz": 129.37306273858957,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9907815456390381,
+    "sim_pitch": 0.9845415353775024,
+    "dist_fwd": 1.3405611515045166,
+    "dist_pitch": 1.7420624494552612
+  },
+  {
+    "base_params": {
+      "tongueIndex": 23.992821119670293,
+      "tongueDiameter": 2.7839778855398087,
+      "pitchHz": 164.67135373610387,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9980053305625916,
+    "sim_pitch": 0.9985858798027039,
+    "dist_fwd": 0.6272599101066589,
+    "dist_pitch": 0.528479278087616
+  },
+  {
+    "base_params": {
+      "tongueIndex": 26.33508855934831,
+      "tongueDiameter": 2.1345586714404097,
+      "pitchHz": 178.96352760900254,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.976972758769989,
+    "sim_pitch": 0.9411730170249939,
+    "dist_fwd": 2.168196201324463,
+    "dist_pitch": 3.4519903659820557
+  },
+  {
+    "base_params": {
+      "tongueIndex": 20.072095641214432,
+      "tongueDiameter": 2.7385204771706686,
+      "pitchHz": 141.1002758034128,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9973435401916504,
+    "sim_pitch": 0.9925208687782288,
+    "dist_fwd": 0.735184907913208,
+    "dist_pitch": 1.2302428483963013
+  },
+  {
+    "base_params": {
+      "tongueIndex": 12.16033403052314,
+      "tongueDiameter": 2.570343755099871,
+      "pitchHz": 124.07738695964048,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9980669021606445,
+    "sim_pitch": 0.9885948300361633,
+    "dist_fwd": 0.6638155579566956,
+    "dist_pitch": 1.5911167860031128
+  },
+  {
+    "base_params": {
+      "tongueIndex": 22.615183227148773,
+      "tongueDiameter": 2.572213690125469,
+      "pitchHz": 160.09799995252354,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9937653541564941,
+    "sim_pitch": 0.9900395274162292,
+    "dist_fwd": 1.1094074249267578,
+    "dist_pitch": 1.403182029724121
+  },
+  {
+    "base_params": {
+      "tongueIndex": 25.575293831563783,
+      "tongueDiameter": 2.061065428086454,
+      "pitchHz": 143.8649526465182,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9902790188789368,
+    "sim_pitch": 0.9699808359146118,
+    "dist_fwd": 1.3570983409881592,
+    "dist_pitch": 2.3782846927642822
+  },
+  {
+    "base_params": {
+      "tongueIndex": 22.189829619598978,
+      "tongueDiameter": 2.394547657870408,
+      "pitchHz": 108.61422730960375,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.994360625743866,
+    "sim_pitch": 0.9866120219230652,
+    "dist_fwd": 1.061585783958435,
+    "dist_pitch": 1.633208155632019
+  },
+  {
+    "base_params": {
+      "tongueIndex": 22.782719941134427,
+      "tongueDiameter": 2.5702774721017074,
+      "pitchHz": 136.2106260777188,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9982271194458008,
+    "sim_pitch": 0.9948492050170898,
+    "dist_fwd": 0.593209445476532,
+    "dist_pitch": 1.0107792615890503
+  },
+  {
+    "base_params": {
+      "tongueIndex": 27.47659498352369,
+      "tongueDiameter": 2.5369155050962715,
+      "pitchHz": 114.32627813831492,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9962307810783386,
+    "sim_pitch": 0.9837551116943359,
+    "dist_fwd": 0.8659107685089111,
+    "dist_pitch": 1.7917522192001343
+  },
+  {
+    "base_params": {
+      "tongueIndex": 26.91141983756393,
+      "tongueDiameter": 2.019760378284576,
+      "pitchHz": 192.21968681128095,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9946174621582031,
+    "sim_pitch": 0.8653481602668762,
+    "dist_fwd": 1.0425039529800415,
+    "dist_pitch": 5.191279888153076
+  },
+  {
+    "base_params": {
+      "tongueIndex": 15.851191227101275,
+      "tongueDiameter": 2.140902954042929,
+      "pitchHz": 126.37844950790691,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9936723113059998,
+    "sim_pitch": 0.9803712368011475,
+    "dist_fwd": 1.1936098337173462,
+    "dist_pitch": 2.1087889671325684
+  },
+  {
+    "base_params": {
+      "tongueIndex": 29.061406290268,
+      "tongueDiameter": 2.6471978915814383,
+      "pitchHz": 165.1435619986197,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9993369579315186,
+    "sim_pitch": 0.9693058133125305,
+    "dist_fwd": 0.35814791917800903,
+    "dist_pitch": 2.4346091747283936
+  },
+  {
+    "base_params": {
+      "tongueIndex": 29.689459867417792,
+      "tongueDiameter": 2.097728210692779,
+      "pitchHz": 137.58806225940145,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9921261668205261,
+    "sim_pitch": 0.9460521936416626,
+    "dist_fwd": 1.2309021949768066,
+    "dist_pitch": 3.2370009422302246
+  },
+  {
+    "base_params": {
+      "tongueIndex": 19.72602256334934,
+      "tongueDiameter": 2.2120766472433164,
+      "pitchHz": 193.5895262222636,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9985038042068481,
+    "sim_pitch": 0.9781883358955383,
+    "dist_fwd": 0.5506645441055298,
+    "dist_pitch": 2.08746337890625
+  },
+  {
+    "base_params": {
+      "tongueIndex": 27.36448590333336,
+      "tongueDiameter": 2.482779500490239,
+      "pitchHz": 104.68039449012907,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9848734140396118,
+    "sim_pitch": 0.9385915994644165,
+    "dist_fwd": 1.7833337783813477,
+    "dist_pitch": 3.556377649307251
+  },
+  {
+    "base_params": {
+      "tongueIndex": 21.950541769562385,
+      "tongueDiameter": 2.5926607391779717,
+      "pitchHz": 155.9282517765245,
+      "tenseness": 0.6,
+      "intensity": 1,
+      "loudness": 1,
+      "voicing": 1,
+      "constrictionIndex": 32,
+      "constrictionDiameter": 3.5
+    },
+    "sim_fwd": 0.9975518584251404,
+    "sim_pitch": 0.9901906251907349,
+    "dist_fwd": 0.6993915438652039,
+    "dist_pitch": 1.3996570110321045
+  }
+]
