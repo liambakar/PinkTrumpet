@@ -1,0 +1,44 @@
+{
+  "experiment": "low-level-acoustic-features-v4",
+  "source_checkpoint": "experiment_v2.npz",
+  "source_checkpoint_sha256": "dca353b7730527435f7c4be29d899414c08483f550d4ed625adbaca3293ac172",
+  "source_engine_sha256": "380e5ffd8395b0d5c69a37ca42fe832e256510ce2204abf88a135f25a7b76075",
+  "current_engine_sha256": "380e5ffd8395b0d5c69a37ca42fe832e256510ce2204abf88a135f25a7b76075",
+  "sample_count": 50,
+  "seed": 20260817,
+  "duration_seconds": 0.2,
+  "warmup_seconds": 0.1,
+  "matched_noise_with_source_experiment": true,
+  "feature": {
+    "name": "flattened-log-mel-power",
+    "dimension": 720,
+    "mel_bins": 40,
+    "fft_size": 2048,
+    "window_seconds": 0.025,
+    "hop_seconds": 0.01,
+    "minimum_frequency_hz": 80.0,
+    "maximum_frequency_hz": 8000.0
+  },
+  "interventions": [
+    {
+      "parameter": "tongueIndex",
+      "delta": 0.5
+    },
+    {
+      "parameter": "tongueDiameter",
+      "delta": 0.5
+    },
+    {
+      "parameter": "constrictionIndex",
+      "delta": 5
+    },
+    {
+      "parameter": "constrictionDiameter",
+      "delta": 0.5
+    },
+    {
+      "parameter": "pitchHz",
+      "delta": 25
+    }
+  ]
+}

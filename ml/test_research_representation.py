@@ -14,6 +14,10 @@ from research_representation.analyze_v3 import (
     smoothness_metrics,
     unit_rows,
 )
+from research_representation.analyze_v4 import (
+    projected_features,
+    separate_direction_magnitude_prediction,
+)
 from research_representation.experiment import (
     INTERVENTIONS,
     PARAMETER_NAMES,
@@ -22,6 +26,7 @@ from research_representation.experiment import (
     parse_args,
     parameters_for_variant,
 )
+from research_representation.experiment_v4 import MEL_BINS, log_mel_feature
 
 
 class ExperimentTwoTests(unittest.TestCase):
@@ -154,6 +159,49 @@ class ExperimentThreeTests(unittest.TestCase):
         deltas = np.asarray([-0.5, -0.2, 0.2, 0.5])
         displacements = deltas[None, :, None] * field[:, None, :]
         np.testing.assert_allclose(local_linear_field(displacements, deltas), field)
+
+
+class ExperimentFourTests(unittest.TestCase):
+    def test_log_mel_feature_is_finite_and_repeatable(self):
+        time = np.arange(round(engine.SAMPLE_RATE * 0.2)) / engine.SAMPLE_RATE
+        audio = np.sin(2 * np.pi * 220 * time)
+        first = log_mel_feature(audio)
+        second = log_mel_feature(audio)
+        self.assertEqual(first.size % MEL_BINS, 0)
+        self.assertTrue(np.all(np.isfinite(first)))
+        np.testing.assert_array_equal(first, second)
+
+    def test_projected_features_include_state_delta_interactions(self):
+        rng = np.random.default_rng(43)
+        starting = rng.normal(size=(10, 8))
+        deltas = np.asarray([-1.0, 1.0])
+        features = projected_features(
+            starting,
+            np.arange(8),
+            np.arange(8, 10),
+            deltas,
+            components=3,
+        )
+        self.assertEqual(features.shape, (4, 11))
+        self.assertFalse(np.allclose(features[0], features[1]))
+
+    def test_separate_predictor_learns_a_state_delta_field(self):
+        rng = np.random.default_rng(47)
+        starting = rng.normal(size=(24, 8))
+        transform = rng.normal(size=(8, 12))
+        field = unit_rows(starting) @ transform
+        deltas = np.asarray([-1.0, -0.5, 0.5, 1.0])
+        vectors = deltas[None, :, None] * field[:, None, :]
+        result = separate_direction_magnitude_prediction(
+            starting,
+            vectors,
+            deltas,
+            seed=11,
+            permutation_draws=200,
+            forest_trees=20,
+        )
+        self.assertGreater(result["direction"]["linear_unit_target_mean_cosine"], 0.9)
+        self.assertGreater(result["direction"]["linear_unit_target_mean_cosine"], result["direction"]["fixed_vector_mean_cosine"])
 
 
 if __name__ == "__main__":

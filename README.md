@@ -164,6 +164,17 @@ Experiment 3 reuses the Experiment 2 embeddings to test whether intervention dir
 
 The completed analysis is documented in [`research_representation/REPORT_V3.md`](research_representation/REPORT_V3.md). It includes label-permutation inference for dependent state pairs, Holm correction, a signed tongue-field model across all intervention magnitudes, and separate reporting of direction quality versus full-vector magnitude error.
 
+## Representation experiment 4
+
+Experiment 4 asks why tongue-position displacement is harder to predict. It measures matched log-mel acoustic changes, fits direction and magnitude models separately, and compares neighborhoods defined by HuBERT, physical parameters, and low-level acoustics.
+
+```bash
+.venv/bin/python research_representation/experiment_v4.py
+.venv/bin/python research_representation/analyze_v4.py
+```
+
+The completed analysis is documented in [`research_representation/REPORT_V4.md`](research_representation/REPORT_V4.md). Acoustic features are resumable and reuse Experiment 2's exact synthesis seeds. Learned models use held-out starting configurations, training-fold PCA, nested ridge selection, and base-aware permutation tests.
+
 ## Architecture
 
 - `src/pink-trombone-worklet.js` — real-time glottal source and vocal-tract waveguide
@@ -177,6 +188,8 @@ The completed analysis is documented in [`research_representation/REPORT_V3.md`]
 - `research_representation/experiment.py` — resumable matched-noise HuBERT displacement extraction
 - `research_representation/analyze_v2.py` — direction, linearity, classification, and regression analysis
 - `research_representation/analyze_v3.py` — state-field smoothness and held-out displacement prediction
+- `research_representation/experiment_v4.py` — matched log-mel acoustic feature extraction
+- `research_representation/analyze_v4.py` — acoustic variability, separated predictors, and neighborhood comparison
 - `server.py` — static development server and local `/api/score` endpoint
 
 ## Attribution
