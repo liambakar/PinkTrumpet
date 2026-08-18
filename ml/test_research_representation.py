@@ -18,6 +18,7 @@ from research_representation.analyze_v4 import (
     projected_features,
     separate_direction_magnitude_prediction,
 )
+from research_representation.analyze_v5 import dimensionality_sweep
 from research_representation.experiment import (
     INTERVENTIONS,
     PARAMETER_NAMES,
@@ -202,6 +203,38 @@ class ExperimentFourTests(unittest.TestCase):
         )
         self.assertGreater(result["direction"]["linear_unit_target_mean_cosine"], 0.9)
         self.assertGreater(result["direction"]["linear_unit_target_mean_cosine"], result["direction"]["fixed_vector_mean_cosine"])
+
+
+class ExperimentFiveTests(unittest.TestCase):
+    def test_supervised_projection_recovers_a_hidden_one_dimensional_state(self):
+        rng = np.random.default_rng(53)
+        sample_count = 120
+        starting = rng.normal(size=(sample_count, 10))
+        hidden_axis = rng.normal(size=10)
+        response_axis = rng.normal(size=14)
+        hidden_state = unit_rows(starting) @ hidden_axis
+        targets = hidden_state[:, None] * response_axis[None, :]
+
+        result = dimensionality_sweep(
+            starting,
+            targets,
+            dimensions=(1, 2),
+            random_repetitions=2,
+            seed=17,
+        )
+
+        learned = result["curves"]["learned_pls"]["1"]["mean_direction_cosine"]
+        pca = result["curves"]["pca"]["1"]["mean_direction_cosine"]
+        random = result["curves"]["random"]["1"]["mean_direction_cosine"]
+        self.assertGreater(learned, 0.9)
+        self.assertGreater(learned, pca + 0.2)
+        self.assertGreater(learned, random + 0.2)
+
+    def test_dimension_sweep_rejects_unidentifiable_projection_sizes(self):
+        starting = np.ones((10, 12))
+        targets = np.ones((10, 4))
+        with self.assertRaises(ValueError):
+            dimensionality_sweep(starting, targets, dimensions=(8,), random_repetitions=1)
 
 
 if __name__ == "__main__":

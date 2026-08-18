@@ -175,6 +175,16 @@ Experiment 4 asks why tongue-position displacement is harder to predict. It meas
 
 The completed analysis is documented in [`research_representation/REPORT_V4.md`](research_representation/REPORT_V4.md). Acoustic features are resumable and reuse Experiment 2's exact synthesis seeds. Learned models use held-out starting configurations, training-fold PCA, nested ridge selection, and base-aware permutation tests.
 
+## Representation experiment 5
+
+Experiment 5 directly tests how much of the starting HuBERT state is needed to predict an intervention. It compares held-out displacement prediction from PCA, repeated random projections, and supervised PLS projections over 1, 2, 4, 8, 16, and 32 dimensions, with a full-state ridge model as a reference.
+
+```bash
+.venv/bin/python research_representation/analyze_v5.py
+```
+
+The completed analysis is documented in [`research_representation/REPORT_V5.md`](research_representation/REPORT_V5.md). All projections are learned inside the training folds. With 50 starting states, the sweep intentionally stops at 32 identifiable dimensions. The main result is that tongue-position direction can be compressed into one supervised score, although its full displacement vector remains poorly predicted.
+
 ## Architecture
 
 - `src/pink-trombone-worklet.js` — real-time glottal source and vocal-tract waveguide
@@ -190,6 +200,7 @@ The completed analysis is documented in [`research_representation/REPORT_V4.md`]
 - `research_representation/analyze_v3.py` — state-field smoothness and held-out displacement prediction
 - `research_representation/experiment_v4.py` — matched log-mel acoustic feature extraction
 - `research_representation/analyze_v4.py` — acoustic variability, separated predictors, and neighborhood comparison
+- `research_representation/analyze_v5.py` — held-out state-dimensionality and supervised-subspace comparison
 - `server.py` — static development server and local `/api/score` endpoint
 
 ## Attribution
