@@ -19,6 +19,10 @@ from research_representation.analyze_v4 import (
     separate_direction_magnitude_prediction,
 )
 from research_representation.analyze_v5 import dimensionality_sweep
+from research_representation.analyze_v6 import (
+    acoustic_measurements,
+    cross_fitted_pls_score,
+)
 from research_representation.experiment import (
     INTERVENTIONS,
     PARAMETER_NAMES,
@@ -235,6 +239,39 @@ class ExperimentFiveTests(unittest.TestCase):
         targets = np.ones((10, 4))
         with self.assertRaises(ValueError):
             dimensionality_sweep(starting, targets, dimensions=(8,), random_repetitions=1)
+
+
+class ExperimentSixTests(unittest.TestCase):
+    def test_cross_fitted_scalar_recovers_a_stable_hidden_axis(self):
+        rng = np.random.default_rng(59)
+        starting = rng.normal(size=(60, 10))
+        hidden_axis = rng.normal(size=10)
+        response_axis = rng.normal(size=14)
+        hidden_state = unit_rows(starting) @ hidden_axis
+        targets = hidden_state[:, None] * response_axis[None, :]
+
+        result = cross_fitted_pls_score(starting, targets, seed=19)
+
+        self.assertGreater(result["mean_fold_axis_absolute_cosine_to_full"], 0.9)
+        self.assertGreater(result["cross_fitted_vs_full_score_spearman"], 0.9)
+
+    def test_acoustic_measurements_are_ordered_and_finite(self):
+        parameters = {
+            "pitchHz": 140,
+            "tenseness": 0.6,
+            "intensity": 1,
+            "loudness": 1,
+            "voicing": 1,
+            "tongueIndex": 18,
+            "tongueDiameter": 2.7,
+            "constrictionIndex": 32,
+            "constrictionDiameter": 3.5,
+        }
+        audio = engine.generate_audio(parameters, 0.1, seed=23)
+        measurements = acoustic_measurements(audio)
+        self.assertTrue(all(np.isfinite(value) for value in measurements.values()))
+        self.assertGreater(measurements["formantF2Hz"], measurements["formantF1Hz"])
+        self.assertGreater(measurements["spectralCentroidHz"], 0)
 
 
 if __name__ == "__main__":

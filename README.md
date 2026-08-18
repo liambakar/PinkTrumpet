@@ -185,6 +185,16 @@ Experiment 5 directly tests how much of the starting HuBERT state is needed to p
 
 The completed analysis is documented in [`research_representation/REPORT_V5.md`](research_representation/REPORT_V5.md). All projections are learned inside the training folds. With 50 starting states, the sweep intentionally stops at 32 identifiable dimensions. The main result is that tongue-position direction can be compressed into one supervised score, although its full displacement vector remains poorly predicted.
 
+## Representation experiment 6
+
+Experiment 6 interprets that compact tongue-response score. It cross-fits the one-component PLS state, tests its association with the five known starting controls and matched LPC/spectral measurements, then compares simple held-out explanations based on tongue position, F2, and their combination.
+
+```bash
+.venv/bin/python research_representation/analyze_v6.py
+```
+
+The completed analysis is documented in [`research_representation/REPORT_V6.md`](research_representation/REPORT_V6.md). The fold-specific PLS axes are stable, and LPC-estimated F2 is the strongest tested explanation of the scalar. The report keeps this acoustic interpretation separate from a causal or anatomical claim.
+
 ## Architecture
 
 - `src/pink-trombone-worklet.js` — real-time glottal source and vocal-tract waveguide
@@ -201,6 +211,7 @@ The completed analysis is documented in [`research_representation/REPORT_V5.md`]
 - `research_representation/experiment_v4.py` — matched log-mel acoustic feature extraction
 - `research_representation/analyze_v4.py` — acoustic variability, separated predictors, and neighborhood comparison
 - `research_representation/analyze_v5.py` — held-out state-dimensionality and supervised-subspace comparison
+- `research_representation/analyze_v6.py` — cross-fitted interpretation of the compact tongue-response state
 - `server.py` — static development server and local `/api/score` endpoint
 
 ## Attribution
